@@ -1,562 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="/dist/output.css"
-    />
-    <title>Vtc Agency</title>
-  </head>
-  <body class="bg-main-white overflow-x-hidden">
-    <header class="py-10">
-      <div class="container relative mt-12 md:px-8 rounded-2xl h-20 6 flex items-center md:bg-white">
-        <div class="items h-full w-full flex justify-between">
-          <!-- this section is for the logo and the links -->
-          <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
-            <a
-              class="block min-h-fit min-w-fit"
-              href="./home.html"
-            >
-              <img
-                src="../../assets//logo.svg"
-                alt=""
-              />
-            </a>
-            <!-- those are the links -->
-            <ul class="side-bar duration-700 z-40 bg-white w-screen rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../home/home.html">Accueil</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../dist/output.css" />
+  <title>Vtc Agency</title>
+</head>
+
+<body class="bg-main-white overflow-x-hidden">
+  <header class="py-10">
+    <div class="container relative mt-12 md:px-8 rounded-2xl h-20 6 flex items-center md:bg-white">
+      <div class="items h-full w-full flex justify-between">
+        <!-- this section is for the logo and the links -->
+        <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
+          <a class="block min-h-fit min-w-fit" href="./home.html">
+            <img src="../../assets//logo.svg" alt="" />
+          </a>
+          <!-- those are the links -->
+          <ul
+            class="side-bar duration-700 z-40 bg-white w-screen rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../home/home.html">Accueil</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../services/services.html">Services</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../about/about.html">À propos</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../blog/blog.html">Blog</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../contact/contact.html">Contacts</a>
+            </li>
+            <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
+              <a href="../login/login.html"
+                class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue">connection</a>
+            </li>
+            <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
+              <button
+                class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</button>
+            </li>
+          </ul>
+        </div>
+        <!-- this section is for the buttons -->
+        <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
+          <a href="../login/login.html"
+            class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue">connection</a>
+          <a href="../contact/contact.html"
+            class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</a>
+        </div>
+        <!-- this is- the side  bar container -->
+        <button class="sideBar-btn block lg:hidden">
+          <img src="../../assets//side-bar-btn.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- this is the main section -->
+  <main class="  ">
+    <div class="container">
+      <!-- this is the main section -->
+      <div class="stepper-container my-10 w-full flex justify-center items-center">
+        <!-- this stepper is for the big screens -->
+        <img src="/assets/BigSecondSteper.svg" alt="" class="max-w-full hidden sm:block" />
+        <!-- this steppers is for the small screens -->
+        <div class="small_stepper w-full flex sm:hidden flex-col relative gap-5">
+          <img src="/assets/SmallFirstStepper.svg" alt="" class="min-h-[30px] min-w-full" />
+          <div class="step_info flex flex-col gap-2 ml-2">
+            <span class="text-desc-gray text-sm">Step 1</span>
+            <h5 class="text-main-blue text-lg font-medium">Basic Info</h5>
+          </div>
+        </div>
+      </div>
+      <!-- this is the main section  -->
+      <section class="py-10 w-full flex flex-col-reverse lg:flex-row lg:gap-5 xl:gap-10">
+        <!-- this is the cars section -->
+        <div class="left-section w-full lg:w-[60%] xl:w-7/12 flex flex-col gap-5">
+          <article class="single_car flex flex-col gap-7 bg-white p-7 rounded-2xl">
+            <!-- this is the header of  the cart -->
+            <div class="car_header w-full flex justify-between items-center">
+              <!-- this is the car name  -->
+              <h5 class="text-[#455B73] font-semibold text-xl md:text-2xl">Berlin</h5>
+              <!--this is the car price  -->
+              <span class="text-desc-gray text-xl md:text-2xl">70€ / UNE</span>
+            </div>
+            <!-- this is the car services container -->
+            <ul class="car_services flex items-center flex-wrap gap-5">
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/max_persons.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
               </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../services/services.html">Services</a>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/max_bags.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
               </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../about/about.html">À propos</a>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/baby_sit.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Siège bébé</span>
               </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../blog/blog.html">Blog</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../contact/contact.html">Contacts</a>
-              </li>
-              <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
-                <a
-                  href="../login/login.html"
-                  class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue"
-                  >connection</a
-                >
-              </li>
-              <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
-                <button class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</button>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/wifi.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Wifi équipé</span>
               </li>
             </ul>
-          </div>
-          <!-- this section is for the buttons -->
-          <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
-            <a
-              href="../login/login.html"
-              class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue"
-              >connection</a
-            >
-            <a
-              href="../contact/contact.html"
-              class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue"
-              >Contacter</a
-            >
-          </div>
-          <!-- this is- the side  bar container -->
-          <button class="sideBar-btn block lg:hidden">
-            <img
-              src="../../assets//side-bar-btn.png"
-              alt=""
-            />
-          </button>
+            <!-- this is the image and other info container -->
+            <div class="info flex justify-between flex-col items-center lg:flex-row gap-5">
+              <img src="/assets/car1.png" alt="" class="w-[260px] h-[175px] object-fill" />
+              <div class="info h-full flex flex-col justify-between gap-10">
+                <ul class="flex flex-col gap-3">
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">Taux fixe sans frais</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">service avec un fournisseur local</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">Free cancellation up to 60 minutes before pick-up
+                      time</span>
+                  </li>
+                </ul>
+                <!-- this is the button container -->
+                <div class="button-container flex justify-between items-center gap-5">
+                  <div class="number-container flex justify-center gap-3 items-center">
+                    <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">-</button>
+                    <span class="text-[#455B73] font-medium text-base">01</span>
+                    <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">+</button>
+                  </div>
+                  <button
+                    class="main_button py-2 px-4 bg-main-blue duration-300 text-white font-semibold text-sm rounded-xl">Sélectionner</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="single_car flex flex-col gap-7 bg-white p-7 rounded-2xl">
+            <!-- this is the header of  the cart -->
+            <div class="car_header w-full flex justify-between items-center">
+              <!-- this is the car name  -->
+              <h5 class="text-[#455B73] font-semibold text-xl md:text-2xl">Berlin</h5>
+              <!--this is the car price  -->
+              <span class="text-desc-gray text-xl md:text-2xl">70€ / UNE</span>
+            </div>
+            <!-- this is the car services container -->
+            <ul class="car_services flex items-center flex-wrap gap-5">
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/max_persons.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
+              </li>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/max_bags.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
+              </li>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/baby_sit.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Siège bébé</span>
+              </li>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/wifi.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Wifi équipé</span>
+              </li>
+            </ul>
+            <!-- this is the image and other info container -->
+            <div class="info flex justify-between flex-col items-center lg:flex-row gap-5">
+              <img src="/assets/car1.png" alt="" class="w-[260px] h-[175px] object-fill" />
+              <div class="info h-full flex flex-col justify-between gap-10">
+                <ul class="flex flex-col gap-3">
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">Taux fixe sans frais</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">service avec un fournisseur local</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">Free cancellation up to 60 minutes before pick-up
+                      time</span>
+                  </li>
+                </ul>
+                <!-- this is the button container -->
+                <div class="button-container flex justify-between items-center gap-5">
+                  <div class="number-container flex justify-center gap-3 items-center">
+                    <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">-</button>
+                    <span class="text-[#455B73] font-medium text-base">01</span>
+                    <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">+</button>
+                  </div>
+                  <button
+                    class="main_button py-2 px-4 bg-main-blue duration-300 text-white font-semibold text-sm rounded-xl">Sélectionner</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="single_car flex flex-col gap-7 bg-white p-7 rounded-2xl">
+            <!-- this is the header of  the cart -->
+            <div class="car_header w-full flex justify-between items-center">
+              <!-- this is the car name  -->
+              <h5 class="text-[#455B73] font-semibold text-xl md:text-2xl">Berlin</h5>
+              <!--this is the car price  -->
+              <span class="text-desc-gray text-xl md:text-2xl">70€ / UNE</span>
+            </div>
+            <!-- this is the car services container -->
+            <ul class="car_services flex items-center flex-wrap gap-5">
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/max_persons.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
+              </li>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/max_bags.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
+              </li>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/baby_sit.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Siège bébé</span>
+              </li>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/wifi.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Wifi équipé</span>
+              </li>
+            </ul>
+            <!-- this is the image and other info container -->
+            <div class="info flex justify-between flex-col items-center lg:flex-row gap-5">
+              <img src="/assets/car1.png" alt="" class="w-[260px] h-[175px] object-fill" />
+              <div class="info h-full flex flex-col justify-between gap-10">
+                <ul class="flex flex-col gap-3">
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">Taux fixe sans frais</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">service avec un fournisseur local</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">Free cancellation up to 60 minutes before pick-up
+                      time</span>
+                  </li>
+                </ul>
+                <!-- this is the button container -->
+                <div class="button-container flex justify-between items-center gap-5">
+                  <div class="number-container flex justify-center gap-3 items-center">
+                    <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">-</button>
+                    <span class="text-[#455B73] font-medium text-base">01</span>
+                    <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">+</button>
+                  </div>
+                  <button
+                    class="main_button py-2 px-4 bg-main-blue duration-300 text-white font-semibold text-sm rounded-xl">Sélectionner</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="single_car flex flex-col gap-7 bg-white p-7 rounded-2xl">
+            <!-- this is the header of  the cart -->
+            <div class="car_header w-full flex justify-between items-center">
+              <!-- this is the car name  -->
+              <h5 class="text-[#455B73] font-semibold text-xl md:text-2xl">Berlin</h5>
+              <!--this is the car price  -->
+              <span class="text-desc-gray text-xl md:text-2xl">70€ / UNE</span>
+            </div>
+            <!-- this is the car services container -->
+            <ul class="car_services flex items-center flex-wrap gap-5">
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/max_persons.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
+              </li>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/max_bags.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
+              </li>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/baby_sit.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Siège bébé</span>
+              </li>
+              <li class="single_service flex items-center gap-2">
+                <img src="/assets/wifi.svg" alt="" />
+                <span class="text-xs md:text-sm text-desc-gray font-medium">Wifi équipé</span>
+              </li>
+            </ul>
+            <!-- this is the image and other info container -->
+            <div class="info flex justify-between flex-col items-center lg:flex-row gap-5">
+              <img src="/assets/car1.png" alt="" class="w-[260px] h-[175px] object-fill" />
+              <div class="info h-full flex flex-col justify-between gap-10">
+                <ul class="flex flex-col gap-3">
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">Taux fixe sans frais</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">service avec un fournisseur local</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img src="/assets/double_check.svg" alt="" />
+                    <span class="text-desc-gray text-sm font-medium">Free cancellation up to 60 minutes before pick-up
+                      time</span>
+                  </li>
+                </ul>
+                <!-- this is the button container -->
+                <div class="button-container flex justify-between items-center gap-5">
+                  <div class="number-container flex justify-center gap-3 items-center">
+                    <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">-</button>
+                    <span class="text-[#455B73] font-medium text-base">01</span>
+                    <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">+</button>
+                  </div>
+                  <button
+                    class="main_button py-2 px-4 bg-main-blue duration-300 text-white font-semibold text-sm rounded-xl">Sélectionner</button>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </header>
-    <!-- this is the main section -->
-    <main class="  ">
-      <div class="container">
-        <!-- this is the main section -->
-        <div class="stepper-container my-10 w-full flex justify-center items-center">
-          <!-- this stepper is for the big screens -->
-          <img
-            src="/assets/BigSecondSteper.svg"
-            alt=""
-            class="max-w-full hidden sm:block"
-          />
-          <!-- this steppers is for the small screens -->
-          <div class="small_stepper w-full flex sm:hidden flex-col relative gap-5">
-            <img
-              src="/assets/SmallFirstStepper.svg"
-              alt=""
-              class="min-h-[30px] min-w-full"
-            />
-            <div class="step_info flex flex-col gap-2 ml-2">
-              <span class="text-desc-gray text-sm">Step 1</span>
-              <h5 class="text-main-blue text-lg font-medium">Basic Info</h5>
+        <!-- this is the right section -->
+        <div class="right-section h-fit flex-1">
+          <!-- this is the top section of the right section -->
+          <div class="top-section bg-white px-6 py-10 rounded-2xl flex flex-col gap-5">
+            <h6 class="text-[#39424A] font-semibold text-lg md:text-xl">Informations de voyage</h6>
+            <!-- this is the map -->
+            <img src="/assets/test_map.png" alt="" class="w-full h-[200px] md:h-[300px] object-fill rounded-2xl" />
+            <!-- those are the general info (duration ...) -->
+            <div class="general_info w-full flex flex-wrap justify-between gap-y-3">
+              <div class="single_info flex gap-2 items-center w-full md:w-1/2">
+                <h5 class="text-[#455B73] font-medium text-base">Distance :</h5>
+                <span class="text-desc-gray font-light">999.8 km</span>
+              </div>
+              <div class="single_info flex gap-2 justify-start md:justify-end items-center w-full md:w-1/2">
+                <h5 class="text-[#455B73] font-medium text-base">Duration: :</h5>
+                <span class="text-desc-gray font-light">8h 30min</span>
+              </div>
+              <div class="single_info flex gap-2 items-center w-full md:w-1/2">
+                <h5 class="text-[#455B73] font-medium text-base">Passagers :</h5>
+                <span class="text-desc-gray font-light">02</span>
+              </div>
+              <div class="single_info flex justify-start md:justify-end gap-2 items-center w-full md:w-1/2">
+                <h5 class="text-[#455B73] font-medium text-base">Baggage :</h5>
+                <span class="text-desc-gray font-light">05</span>
+              </div>
             </div>
+            <!-- those are the locations info -->
+            <div class="location-container flex flex-col gap-2 my-5">
+              <!-- this is the start location -->
+              <div class="start flex items-center gap-2">
+                <img src="/assets/blue_location_icon.svg" alt="" />
+                <span class="text-desc-gray font-medium text-base">(CDC) Charles de Gaulle Airport</span>
+              </div>
+              <!-- this is the from to icon -->
+              <img src="/assets/from_to_icon.svg" alt="" class="ml-2 h-fit w-fit" />
+              <!-- this is the end location -->
+              <div class="start flex items-center gap-2">
+                <img src="/assets/blue_location_icon.svg" alt="" />
+                <span class="text-desc-gray font-medium text-base">(CDC) Charles de Gaulle Airport</span>
+              </div>
+            </div>
+            <!-- those are the date container -->
+            <div class="dates flex flex-col gap-2">
+              <!-- this is the start -->
+              <div class="start">
+                <h5 class="text-[#39424A] font-medium text-base">Départ</h5>
+                <div class="info flex items-center my-3 justify-between md:gap-10">
+                  <div class="date flex items-center gap-3">
+                    <img src="/assets/blue_calender.svg" alt="" />
+                    <span class="text-desc-gray font-medium">03-06-2023</span>
+                  </div>
+                  <div class="date flex items-center gap-3">
+                    <img src="/assets/blue_lock_icon.svg" alt="" />
+                    <span class="text-desc-gray font-medium">8:00 AM</span>
+                  </div>
+                </div>
+              </div>
+              <!-- this is the arrival -->
+              <div class="arrival">
+                <h5 class="text-[#39424A] font-medium text-base">Arrivée</h5>
+                <div class="info flex items-center mt-3 justify-between md:gap-10">
+                  <div class="date flex items-center gap-3">
+                    <img src="/assets/blue_calender.svg" alt="" />
+                    <span class="text-desc-gray font-medium">03-06-2023</span>
+                  </div>
+                  <div class="date flex items-center gap-3">
+                    <img src="/assets/blue_lock_icon.svg" alt="" />
+                    <span class="text-desc-gray font-medium">8:00 AM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- this is the promo code section -->
+          <div class="promo-code my-10 md:my-5 bg-white rounded-2xl p-6">
+            <h3 class="text-[#39424A] font-semibold text-lg md:ext-xl">Code Promo</h3>
+            <p class="text-desc-gray text-sm my-2 w-full md:w-2/3">If you have a special/promo code you can use it to
+              get exclusive discounts</p>
+            <!-- this is form -->
+            <form action="" class="flex gap-2 md:gap-5 my-4 justify-between items-center">
+              <input placeholder="You Code Here" id="promo" type="text"
+                class="rounded-xl w-full focus:border-main-blue outline-none text-paragraph-blue p-3 border-2 border-sec-gray border-solid" />
+              <button
+                class="main_button bg-main-blue px-5 md:px-10 py-3 font-medium text-base text-white duration-300 rounded-xl">Validate</button>
+            </form>
           </div>
         </div>
-        <!-- this is the main section  -->
-        <section class="py-10 w-full flex flex-col-reverse lg:flex-row lg:gap-5 xl:gap-10">
-          <!-- this is the cars section -->
-          <div class="left-section w-full lg:w-[60%] xl:w-7/12 flex flex-col gap-5">
-            <article class="single_car flex flex-col gap-7 bg-white p-7 rounded-2xl">
-              <!-- this is the header of  the cart -->
-              <div class="car_header w-full flex justify-between items-center">
-                <!-- this is the car name  -->
-                <h5 class="text-[#455B73] font-semibold text-xl md:text-2xl">Berlin</h5>
-                <!--this is the car price  -->
-                <span class="text-desc-gray text-xl md:text-2xl">70€ / UNE</span>
-              </div>
-              <!-- this is the car services container -->
-              <ul class="car_services flex items-center flex-wrap gap-5">
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/max_persons.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/max_bags.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/baby_sit.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Siège bébé</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/wifi.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Wifi équipé</span>
-                </li>
-              </ul>
-              <!-- this is the image and other info container -->
-              <div class="info flex justify-between flex-col items-center lg:flex-row gap-5">
-                <img
-                  src="/assets/car1.png"
-                  alt=""
-                  class="w-[260px] h-[175px] object-fill"
-                />
-                <div class="info h-full flex flex-col justify-between gap-10">
-                  <ul class="flex flex-col gap-3">
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">Taux fixe sans frais</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">service avec un fournisseur local</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">Free cancellation up to 60 minutes before pick-up time</span>
-                    </li>
-                  </ul>
-                  <!-- this is the button container -->
-                  <div class="button-container flex justify-between items-center gap-5">
-                    <div class="number-container flex justify-center gap-3 items-center">
-                      <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">-</button>
-                      <span class="text-[#455B73] font-medium text-base">01</span>
-                      <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">+</button>
-                    </div>
-                    <button class="main_button py-2 px-4 bg-main-blue duration-300 text-white font-semibold text-sm rounded-xl">Sélectionner</button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="single_car flex flex-col gap-7 bg-white p-7 rounded-2xl">
-              <!-- this is the header of  the cart -->
-              <div class="car_header w-full flex justify-between items-center">
-                <!-- this is the car name  -->
-                <h5 class="text-[#455B73] font-semibold text-xl md:text-2xl">Berlin</h5>
-                <!--this is the car price  -->
-                <span class="text-desc-gray text-xl md:text-2xl">70€ / UNE</span>
-              </div>
-              <!-- this is the car services container -->
-              <ul class="car_services flex items-center flex-wrap gap-5">
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/max_persons.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/max_bags.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/baby_sit.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Siège bébé</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/wifi.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Wifi équipé</span>
-                </li>
-              </ul>
-              <!-- this is the image and other info container -->
-              <div class="info flex justify-between flex-col items-center lg:flex-row gap-5">
-                <img
-                  src="/assets/car1.png"
-                  alt=""
-                  class="w-[260px] h-[175px] object-fill"
-                />
-                <div class="info h-full flex flex-col justify-between gap-10">
-                  <ul class="flex flex-col gap-3">
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">Taux fixe sans frais</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">service avec un fournisseur local</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">Free cancellation up to 60 minutes before pick-up time</span>
-                    </li>
-                  </ul>
-                  <!-- this is the button container -->
-                  <div class="button-container flex justify-between items-center gap-5">
-                    <div class="number-container flex justify-center gap-3 items-center">
-                      <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">-</button>
-                      <span class="text-[#455B73] font-medium text-base">01</span>
-                      <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">+</button>
-                    </div>
-                    <button class="main_button py-2 px-4 bg-main-blue duration-300 text-white font-semibold text-sm rounded-xl">Sélectionner</button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="single_car flex flex-col gap-7 bg-white p-7 rounded-2xl">
-              <!-- this is the header of  the cart -->
-              <div class="car_header w-full flex justify-between items-center">
-                <!-- this is the car name  -->
-                <h5 class="text-[#455B73] font-semibold text-xl md:text-2xl">Berlin</h5>
-                <!--this is the car price  -->
-                <span class="text-desc-gray text-xl md:text-2xl">70€ / UNE</span>
-              </div>
-              <!-- this is the car services container -->
-              <ul class="car_services flex items-center flex-wrap gap-5">
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/max_persons.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/max_bags.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/baby_sit.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Siège bébé</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/wifi.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Wifi équipé</span>
-                </li>
-              </ul>
-              <!-- this is the image and other info container -->
-              <div class="info flex justify-between flex-col items-center lg:flex-row gap-5">
-                <img
-                  src="/assets/car1.png"
-                  alt=""
-                  class="w-[260px] h-[175px] object-fill"
-                />
-                <div class="info h-full flex flex-col justify-between gap-10">
-                  <ul class="flex flex-col gap-3">
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">Taux fixe sans frais</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">service avec un fournisseur local</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">Free cancellation up to 60 minutes before pick-up time</span>
-                    </li>
-                  </ul>
-                  <!-- this is the button container -->
-                  <div class="button-container flex justify-between items-center gap-5">
-                    <div class="number-container flex justify-center gap-3 items-center">
-                      <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">-</button>
-                      <span class="text-[#455B73] font-medium text-base">01</span>
-                      <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">+</button>
-                    </div>
-                    <button class="main_button py-2 px-4 bg-main-blue duration-300 text-white font-semibold text-sm rounded-xl">Sélectionner</button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="single_car flex flex-col gap-7 bg-white p-7 rounded-2xl">
-              <!-- this is the header of  the cart -->
-              <div class="car_header w-full flex justify-between items-center">
-                <!-- this is the car name  -->
-                <h5 class="text-[#455B73] font-semibold text-xl md:text-2xl">Berlin</h5>
-                <!--this is the car price  -->
-                <span class="text-desc-gray text-xl md:text-2xl">70€ / UNE</span>
-              </div>
-              <!-- this is the car services container -->
-              <ul class="car_services flex items-center flex-wrap gap-5">
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/max_persons.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/max_bags.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Max 4</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/baby_sit.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Siège bébé</span>
-                </li>
-                <li class="single_service flex items-center gap-2">
-                  <img
-                    src="/assets/wifi.svg"
-                    alt=""
-                  />
-                  <span class="text-xs md:text-sm text-desc-gray font-medium">Wifi équipé</span>
-                </li>
-              </ul>
-              <!-- this is the image and other info container -->
-              <div class="info flex justify-between flex-col items-center lg:flex-row gap-5">
-                <img
-                  src="/assets/car1.png"
-                  alt=""
-                  class="w-[260px] h-[175px] object-fill"
-                />
-                <div class="info h-full flex flex-col justify-between gap-10">
-                  <ul class="flex flex-col gap-3">
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">Taux fixe sans frais</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">service avec un fournisseur local</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                      <img
-                        src="/assets/double_check.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray text-sm font-medium">Free cancellation up to 60 minutes before pick-up time</span>
-                    </li>
-                  </ul>
-                  <!-- this is the button container -->
-                  <div class="button-container flex justify-between items-center gap-5">
-                    <div class="number-container flex justify-center gap-3 items-center">
-                      <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">-</button>
-                      <span class="text-[#455B73] font-medium text-base">01</span>
-                      <button class="text-[#455B73] font-semibold bg-[#F4F4F4] rounded-md px-3 py-1">+</button>
-                    </div>
-                    <button class="main_button py-2 px-4 bg-main-blue duration-300 text-white font-semibold text-sm rounded-xl">Sélectionner</button>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!-- this is the right section -->
-          <div class="right-section h-fit flex-1">
-            <!-- this is the top section of the right section -->
-            <div class="top-section bg-white px-6 py-10 rounded-2xl flex flex-col gap-5">
-              <h6 class="text-[#39424A] font-semibold text-lg md:text-xl">Informations de voyage</h6>
-              <!-- this is the map -->
-              <img
-                src="/assets/test_map.png"
-                alt=""
-                class="w-full h-[200px] md:h-[300px] object-fill rounded-2xl"
-              />
-              <!-- those are the general info (duration ...) -->
-              <div class="general_info w-full flex flex-wrap justify-between gap-y-3">
-                <div class="single_info flex gap-2 items-center w-full md:w-1/2">
-                  <h5 class="text-[#455B73] font-medium text-base">Distance :</h5>
-                  <span class="text-desc-gray font-light">999.8 km</span>
-                </div>
-                <div class="single_info flex gap-2 justify-start md:justify-end items-center w-full md:w-1/2">
-                  <h5 class="text-[#455B73] font-medium text-base">Duration: :</h5>
-                  <span class="text-desc-gray font-light">8h 30min</span>
-                </div>
-                <div class="single_info flex gap-2 items-center w-full md:w-1/2">
-                  <h5 class="text-[#455B73] font-medium text-base">Passagers :</h5>
-                  <span class="text-desc-gray font-light">02</span>
-                </div>
-                <div class="single_info flex justify-start md:justify-end gap-2 items-center w-full md:w-1/2">
-                  <h5 class="text-[#455B73] font-medium text-base">Baggage :</h5>
-                  <span class="text-desc-gray font-light">05</span>
-                </div>
-              </div>
-              <!-- those are the locations info -->
-              <div class="location-container flex flex-col gap-2 my-5">
-                <!-- this is the start location -->
-                <div class="start flex items-center gap-2">
-                  <img
-                    src="/assets/blue_location_icon.svg"
-                    alt=""
-                  />
-                  <span class="text-desc-gray font-medium text-base">(CDC) Charles de Gaulle Airport</span>
-                </div>
-                <!-- this is the from to icon -->
-                <img
-                  src="/assets/from_to_icon.svg"
-                  alt=""
-                  class="ml-2 h-fit w-fit"
-                />
-                <!-- this is the end location -->
-                <div class="start flex items-center gap-2">
-                  <img
-                    src="/assets/blue_location_icon.svg"
-                    alt=""
-                  />
-                  <span class="text-desc-gray font-medium text-base">(CDC) Charles de Gaulle Airport</span>
-                </div>
-              </div>
-              <!-- those are the date container -->
-              <div class="dates flex flex-col gap-2">
-                <!-- this is the start -->
-                <div class="start">
-                  <h5 class="text-[#39424A] font-medium text-base">Départ</h5>
-                  <div class="info flex items-center my-3 justify-between md:gap-10">
-                    <div class="date flex items-center gap-3">
-                      <img
-                        src="/assets/blue_calender.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray font-medium">03-06-2023</span>
-                    </div>
-                    <div class="date flex items-center gap-3">
-                      <img
-                        src="/assets/blue_lock_icon.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray font-medium">8:00 AM</span>
-                    </div>
-                  </div>
-                </div>
-                <!-- this is the arrival -->
-                <div class="arrival">
-                  <h5 class="text-[#39424A] font-medium text-base">Arrivée</h5>
-                  <div class="info flex items-center mt-3 justify-between md:gap-10">
-                    <div class="date flex items-center gap-3">
-                      <img
-                        src="/assets/blue_calender.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray font-medium">03-06-2023</span>
-                    </div>
-                    <div class="date flex items-center gap-3">
-                      <img
-                        src="/assets/blue_lock_icon.svg"
-                        alt=""
-                      />
-                      <span class="text-desc-gray font-medium">8:00 AM</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- this is the promo code section -->
-            <div class="promo-code my-10 md:my-5 bg-white rounded-2xl p-6">
-              <h3 class="text-[#39424A] font-semibold text-lg md:ext-xl">Code Promo</h3>
-              <p class="text-desc-gray text-sm my-2 w-full md:w-2/3">If you have a special/promo code you can use it to get exclusive discounts</p>
-              <!-- this is form -->
-              <form
-                action=""
-                class="flex gap-2 md:gap-5 my-4 justify-between items-center"
-              >
-                <input
-                  placeholder="You Code Here"
-                  id="promo"
-                  type="text"
-                  class="rounded-xl w-full focus:border-main-blue outline-none text-paragraph-blue p-3 border-2 border-sec-gray border-solid"
-                />
-                <button class="main_button bg-main-blue px-5 md:px-10 py-3 font-medium text-base text-white duration-300 rounded-xl">Validate</button>
-              </form>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-  </body>
-  <script src="./StepTwo.js"></script>
+      </section>
+    </div>
+  </main>
+</body>
+<script src="./StepTwo.js"></script>
+
 </html>

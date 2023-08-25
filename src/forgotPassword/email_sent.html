@@ -1,98 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="/dist/output.css"
-    />
-    <title>Document</title>
-  </head>
-  <body class="bg-main-white overflow-x-hidden">
-    <main class="py-10">
-      <div class="container relative flex justify-center items-center">
-        <!-- this is the top section for the buttons -->
-        <div class="content w-full relative md:w-2/3 lg:w-5/12">
-          <!-- this is the top container for buttons -->
-          <div class="btns-container flex justify-between md:items-center flex-col-reverse gap-16 md:flex-row">
-            <button class="home-button">
-              <a
-                class="flex items-center gap-2"
-                href="../home/home.html"
-              >
-                <img
-                  src="/assets/left_arrow.svg"
-                  alt=""
-                />
-                <span class="text-desc-gray font-medium text-sm"> Home </span>
-              </a>
-            </button>
-            <!-- this is the logo -->
-            <button class="">
-              <a
-                class="block min-w-12 min-h-12"
-                href="../home/home.html"
-              >
-                <img
-                  src="/assets/logo.svg"
-                  alt=""
-                />
-              </a>
-            </button>
-          </div>
-          <!-- this is the form -->
-          <div class="form-container h-fit relative w-full">
-            <form
-              action=""
-              class="bg-white relative z-30 rounded-2xl p-5 md:p-10 mt-10 flex flex-col gap-7"
-            >
-              <!-- this is the form header -->
-              <div class="form-header flex flex-col gap-5">
-                <h2 class="text-title-blue font-semibold text-xl">we've sent you an email containing further instructions for resetting your password.</h2>
-                <p class="text-desc-gray text-sm">
-                  If you haven't received an email in 5 minutes, check your spam,
-                  <button class="text-main-blue font-semibold">resend</button>, or
-                  <a
-                    href="./reset_password.html"
-                    class="text-main-blue font-semibold"
-                  >
-                    try a different email</a
-                  >.
-                </p>
-              </div>
-            </form>
-          </div>
-          <!-- those are the links below the form -->
-          <ul class="links flex items-center gap-5 mt-10">
-            <li>
-              <a
-                class="text-[#ADBDCC] text-sm font-medium"
-                href="../home/home.html"
-                >© CABVTC</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] text-sm font-medium"
-                href="../contact/contact.html"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] text-sm font-medium"
-                href=""
-                >Privacy & Terms</a
-              >
-            </li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../dist/output.css" />
+  <title>Document</title>
+</head>
+
+<body class="bg-main-white overflow-x-hidden">
+  <main class="py-10">
+    <div class="container relative flex justify-center items-center">
+      <!-- this is the top section for the buttons -->
+      <div class="content w-full relative md:w-2/3 lg:w-5/12">
+        <!-- this is the top container for buttons -->
+        <div class="btns-container flex justify-between md:items-center flex-col-reverse gap-16 md:flex-row">
+          <button class="home-button">
+            <a class="flex items-center gap-2" href="../home/home.html">
+              <img src="/assets/left_arrow.svg" alt="" />
+              <span class="text-desc-gray font-medium text-sm"> Home </span>
+            </a>
+          </button>
+          <!-- this is the logo -->
+          <button class="">
+            <a class="block min-w-12 min-h-12" href="../home/home.html">
+              <img src="/assets/logo.svg" alt="" />
+            </a>
+          </button>
         </div>
+        <!-- this is the form -->
+        <div class="form-container h-fit relative w-full">
+          <form action="" class="bg-white relative z-30 rounded-2xl p-5 md:p-10 mt-10 flex flex-col gap-7">
+            <!-- this is the form header -->
+            <div class="form-header flex flex-col gap-5">
+              <h2 class="text-title-blue font-semibold text-xl">we've sent you an email containing further instructions
+                for resetting your password.</h2>
+              <p class="text-desc-gray text-sm">
+                If you haven't received an email in 5 minutes, check your spam,
+                <button class="text-main-blue font-semibold">resend</button>, or
+                <a href="./reset_password.html" class="text-main-blue font-semibold">
+                  try a different email</a>.
+              </p>
+            </div>
+          </form>
+        </div>
+        <!-- those are the links below the form -->
+        <ul class="links flex items-center gap-5 mt-10">
+          <li>
+            <a class="text-[#ADBDCC] text-sm font-medium" href="../home/home.html">© CABVTC</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] text-sm font-medium" href="../contact/contact.html">Contact</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] text-sm font-medium" href="">Privacy & Terms</a>
+          </li>
+        </ul>
       </div>
-    </main>
-  </body>
-  <script src="./login.js"></script>
+    </div>
+  </main>
+</body>
+<script src="./login.js"></script>
+
 </html>

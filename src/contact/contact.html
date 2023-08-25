@@ -1,284 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="/dist/output.css"
-    />
-    <title>Vtc Agency</title>
-  </head>
-  <body class="bg-main-white overflow-x-hidden">
-    <!-- this is the header -->
-    <header class="py-5 md:py-10">
-      <div class="container relative mt-12 rounded-2xl h-20 6 md:px-8 flex items-center md:bg-white">
-        <div class="items h-full w-full flex justify-between">
-          <!-- this section is for the logo and the links -->
-          <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
-            <a
-              class="block min-h-fit min-w-fit"
-              href="../home/home.html"
-            >
-              <img
-                src="../../assets//logo.svg"
-                alt=""
-              />
-            </a>
-            <!-- those are the links -->
-            <ul class="side-bar duration-700 w-screen z-40 bg-white rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../home/home.html">Accueil</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../services/services.html">Services</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../about/about.html">À propos</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../blog/blog.html">Blog</a>
-              </li>
-              <li class="selected hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../contact/contact.html">Contacts</a>
-              </li>
-              <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
-                <a
-                  href="../login/login.html"
-                  class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue"
-                  >connection</a
-                >
-              </li>
-              <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
-                <a
-                  href="../contact/contact.html"
-                  class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue"
-                  >Contacter</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- this section is for the buttons -->
-          <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
-            <a
-              href="../login/login.html"
-              class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue"
-              >connection</a
-            >
-            <a
-              href="../contact/contact.html"
-              class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue"
-              >Contacter</a
-            >
-          </div>
-          <!-- this is- the side  bar container -->
-          <button class="sideBar-btn block lg:hidden">
-            <img
-              src="../../assets//side-bar-btn.png"
-              alt=""
-            />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../dist/output.css" />
+  <title>Vtc Agency</title>
+</head>
+
+<body class="bg-main-white overflow-x-hidden">
+  <!-- this is the header -->
+  <header class="py-5 md:py-10">
+    <div class="container relative mt-12 rounded-2xl h-20 6 md:px-8 flex items-center md:bg-white">
+      <div class="items h-full w-full flex justify-between">
+        <!-- this section is for the logo and the links -->
+        <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
+          <a class="block min-h-fit min-w-fit" href="../home/home.html">
+            <img src="../../assets//logo.svg" alt="" />
+          </a>
+          <!-- those are the links -->
+          <ul
+            class="side-bar duration-700 w-screen z-40 bg-white rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../home/home.html">Accueil</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../services/services.html">Services</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../about/about.html">À propos</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../blog/blog.html">Blog</a>
+            </li>
+            <li class="selected hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../contact/contact.html">Contacts</a>
+            </li>
+            <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
+              <a href="../login/login.html"
+                class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue">connection</a>
+            </li>
+            <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
+              <a href="../contact/contact.html"
+                class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</a>
+            </li>
+          </ul>
+        </div>
+        <!-- this section is for the buttons -->
+        <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
+          <a href="../login/login.html"
+            class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue">connection</a>
+          <a href="../contact/contact.html"
+            class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</a>
+        </div>
+        <!-- this is- the side  bar container -->
+        <button class="sideBar-btn block lg:hidden">
+          <img src="../../assets//side-bar-btn.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- this is the contact section -->
+  <section class="contact pb-32">
+    <div class="container flex justify-between gap-10 flex-col lg:flex-row items-center">
+      <!-- this is the form -->
+      <form action="" class="rounded-2xl w-full md:w-8/12 lg:w-5/12 flex flex-col gap-5 z-30 p-5 bg-white relative">
+        <div class="form-column m flex flex-col gap-3 w-full">
+          <label for="Nom" class="text-paragraph-blue font-semibold">Nom Complet</label>
+          <input id="nom" type="text"
+            class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+            placeholder="Nom" />
+        </div>
+        <div class="form-column flex flex-col gap-3 w-full">
+          <label for="email" class="text-paragraph-blue font-semibold">Email</label>
+          <input id="email" type="email"
+            class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+            placeholder="example@gmail.com" />
+        </div>
+        <div class="form-column flex flex-col gap-3 w-full">
+          <label for="entreprise" class="text-paragraph-blue font-semibold">Societe/Entreprise</label>
+          <input id="entreprise type=" email"
+            class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+            placeholder="VTC / CAB " />
+        </div>
+        <div class="form-column flex flex-col gap-3 w-full">
+          <label for="entreprise" class="text-paragraph-blue font-semibold">Message</label>
+          <textarea
+            class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid resize-none"
+            name="" id="" cols="30" rows="5"></textarea>
+        </div>
+        <!-- this is the bottom section of the form -->
+        <div class="form-column mt-5 flex justify-end items-center">
+          <!-- this is the submittion button -->
+          <button
+            class="rounded-xl main_button duration-300 flex items-center gap-2 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">
+            <span>Envoyer</span>
+            <img src="/assets/send_icon.svg" alt="" />
           </button>
         </div>
+      </form>
+      <!-- this is the image -->
+      <div class="image-container flex-1 flex justify-center">
+        <img src="/assets/contact_page_image.png" class="max-w-[350px] w-full object-cover" alt="" />
       </div>
-    </header>
-    <!-- this is the contact section -->
-    <section class="contact pb-32">
-      <div class="container flex justify-between gap-10 flex-col lg:flex-row items-center">
-        <!-- this is the form -->
-        <form
-          action=""
-          class="rounded-2xl w-full md:w-8/12 lg:w-5/12 flex flex-col gap-5 z-30 p-5 bg-white relative"
-        >
-          <div class="form-column m flex flex-col gap-3 w-full">
-            <label
-              for="Nom"
-              class="text-paragraph-blue font-semibold"
-              >Nom Complet</label
-            >
-            <input
-              id="nom"
-              type="text"
-              class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
-              placeholder="Nom"
-            />
-          </div>
-          <div class="form-column flex flex-col gap-3 w-full">
-            <label
-              for="email"
-              class="text-paragraph-blue font-semibold"
-              >Email</label
-            >
-            <input
-              id="email"
-              type="email"
-              class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
-              placeholder="example@gmail.com"
-            />
-          </div>
-          <div class="form-column flex flex-col gap-3 w-full">
-            <label
-              for="entreprise"
-              class="text-paragraph-blue font-semibold"
-              >Societe/Entreprise</label
-            >
-            <input id="entreprise type="email" class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid" placeholder="VTC / CAB " />
-          </div>
-          <div class="form-column flex flex-col gap-3 w-full">
-            <label
-              for="entreprise"
-              class="text-paragraph-blue font-semibold"
-              >Message</label
-            >
-            <textarea
-              class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid resize-none"
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-            ></textarea>
-          </div>
-          <!-- this is the bottom section of the form -->
-          <div class="form-column mt-5 flex justify-end items-center">
-            <!-- this is the submittion button -->
-            <button class="rounded-xl main_button duration-300 flex items-center gap-2 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">
-              <span>Envoyer</span>
-              <img
-                src="/assets/send_icon.svg"
-                alt=""
-              />
-            </button>
-          </div>
-        </form>
-        <!-- this is the image -->
-        <div class="image-container flex-1 flex justify-center">
-          <img
-            src="/assets/contact_page_image.png"
-            class="max-w-[350px] w-full object-cover"
-            alt=""
-          />
-        </div>
+    </div>
+  </section>
+  <!-- this is the footer -->
+  <footer class="py-10">
+    <div class="container px-5 py-10 bg-white rounded-2xl flex justify-between gap-10 flex-col md:flex-row">
+      <div class="first-column w-full md:w-[33%] flex flex-col gap-3">
+        <a class="block min-h-fit min-w-fit" href="./home.html">
+          <img src="../../assets//logo.svg" alt="" />
+        </a>
+        <p class="text-desc-gray inter font-light text-base w-full md:w-2/3">une agence spécialisée dans la location de
+          véhicules haut de gamme.</p>
       </div>
-    </section>
-    <!-- this is the footer -->
-    <footer class="py-10">
-      <div class="container px-5 py-10 bg-white rounded-2xl flex justify-between gap-10 flex-col md:flex-row">
-        <div class="first-column w-full md:w-[33%] flex flex-col gap-3">
-          <a
-            class="block min-h-fit min-w-fit"
-            href="./home.html"
-          >
-            <img
-              src="../../assets//logo.svg"
-              alt=""
-            />
-          </a>
-          <p class="text-desc-gray inter font-light text-base w-full md:w-2/3">une agence spécialisée dans la location de véhicules haut de gamme.</p>
-        </div>
-        <div class="second-column w-full md:w-[33%] flex flex-col gap-3">
-          <h4 class="text-[#4F5A65] font-semibold">Content</h4>
-          <ul class="flex flex-col gap-2">
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/home/home.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/about/about.html"
-                >À Propos</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/blog/blog.html"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/services/services.html"
-                >Reserver</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/contact/contact.html"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="third-column w-full md:w-[33%] flex flex-col gap-3">
-          <h4 class="text-[#4F5A65] font-semibold">Social</h4>
-          <ul class="flex gap-5">
-            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
-              <a
-                class="min-h-10 min-w-10 block"
-                href=""
-                ><img
-                  src="../../assets/facebook.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
-              <a
-                class="min-h-10 min-w-10 block"
-                href=""
-                ><img
-                  src="../../assets/instagram.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
-              <a
-                class="min-h-10 min-w-10 block"
-                href=""
-                ><img
-                  src="../../assets/twiiter.svg"
-                  alt=""
-              /></a>
-            </li>
-          </ul>
-          <ul class="flex flex-col gap-3 mt-3">
-            <li class="flex">
-              <a
-                class="flex gap-2 items-center"
-                href="mailto:hello@agencycabvtc.com"
-              >
-                <img
-                  src="../../assets/small_message.svg"
-                  alt=""
-                />
-                <span class="text-[#ADBDCC] text-sm">hello@agencycabvtc.com</span>
-              </a>
-            </li>
-            <li class="flex">
-              <a
-                class="flex gap-2 items-center"
-                href="tel:+33 1 81 70 80 65"
-              >
-                <img
-                  src="../../assets/small_phone.svg"
-                  alt=""
-                />
-                <span class="text-[#ADBDCC] text-sm">+33 1 81 70 80 65</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="second-column w-full md:w-[33%] flex flex-col gap-3">
+        <h4 class="text-[#4F5A65] font-semibold">Content</h4>
+        <ul class="flex flex-col gap-2">
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/home/home.html">Home</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/about/about.html">À Propos</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/blog/blog.html">Blog</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/services/services.html">Reserver</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/contact/contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-      <!-- this is the copyright phrase -->
-      <p class="text-center text-[#ADBDCC] text-sm md:text-base text-medium my-10">All Rights Reserved-CAB VTC <span class="year"></span></p>
-    </footer>
-  </body>
-  <script src="./contact.js"></script>
+      <div class="third-column w-full md:w-[33%] flex flex-col gap-3">
+        <h4 class="text-[#4F5A65] font-semibold">Social</h4>
+        <ul class="flex gap-5">
+          <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+            <a class="min-h-10 min-w-10 block" href=""><img src="../../assets/facebook.svg" alt="" /></a>
+          </li>
+          <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+            <a class="min-h-10 min-w-10 block" href=""><img src="../../assets/instagram.svg" alt="" /></a>
+          </li>
+          <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+            <a class="min-h-10 min-w-10 block" href=""><img src="../../assets/twiiter.svg" alt="" /></a>
+          </li>
+        </ul>
+        <ul class="flex flex-col gap-3 mt-3">
+          <li class="flex">
+            <a class="flex gap-2 items-center" href="mailto:hello@agencycabvtc.com">
+              <img src="../../assets/small_message.svg" alt="" />
+              <span class="text-[#ADBDCC] text-sm">hello@agencycabvtc.com</span>
+            </a>
+          </li>
+          <li class="flex">
+            <a class="flex gap-2 items-center" href="tel:+33 1 81 70 80 65">
+              <img src="../../assets/small_phone.svg" alt="" />
+              <span class="text-[#ADBDCC] text-sm">+33 1 81 70 80 65</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- this is the copyright phrase -->
+    <p class="text-center text-[#ADBDCC] text-sm md:text-base text-medium my-10">All Rights Reserved-CAB VTC <span
+        class="year"></span></p>
+  </footer>
+</body>
+<script src="./contact.js"></script>
+
 </html>

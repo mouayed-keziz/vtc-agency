@@ -1,341 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="/dist/output.css"
-    />
-    <title>Vtc Agency</title>
-  </head>
-  <body class="bg-main-white overflow-x-hidden">
-    <header class="py-10">
-      <div class="container relative mt-12 md:px-8 rounded-2xl h-20 6 flex items-center md:bg-white">
-        <div class="items h-full w-full flex justify-between">
-          <!-- this section is for the logo and the links -->
-          <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
-            <a
-              class="block min-h-fit min-w-fit"
-              href="./home.html"
-            >
-              <img
-                src="../../assets//logo.svg"
-                alt=""
-              />
-            </a>
-            <!-- those are the links -->
-            <ul class="side-bar duration-700 z-40 bg-white w-screen rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../home/home.html">Accueil</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../services/services.html">Services</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../about/about.html">À propos</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../blog/blog.html">Blog</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../contact/contact.html">Contacts</a>
-              </li>
-              <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
-                <a
-                  href="../login/login.html"
-                  class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue"
-                  >connection</a
-                >
-              </li>
-              <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
-                <button class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</button>
-              </li>
-            </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../dist/output.css" />
+  <title>Vtc Agency</title>
+</head>
+
+<body class="bg-main-white overflow-x-hidden">
+  <header class="py-10">
+    <div class="container relative mt-12 md:px-8 rounded-2xl h-20 6 flex items-center md:bg-white">
+      <div class="items h-full w-full flex justify-between">
+        <!-- this section is for the logo and the links -->
+        <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
+          <a class="block min-h-fit min-w-fit" href="./home.html">
+            <img src="../../assets//logo.svg" alt="" />
+          </a>
+          <!-- those are the links -->
+          <ul
+            class="side-bar duration-700 z-40 bg-white w-screen rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../home/home.html">Accueil</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../services/services.html">Services</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../about/about.html">À propos</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../blog/blog.html">Blog</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../contact/contact.html">Contacts</a>
+            </li>
+            <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
+              <a href="../login/login.html"
+                class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue">connection</a>
+            </li>
+            <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
+              <button
+                class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</button>
+            </li>
+          </ul>
+        </div>
+        <!-- this section is for the buttons -->
+        <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
+          <a href="../login/login.html"
+            class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue">connection</a>
+          <a href="../contact/contact.html"
+            class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</a>
+        </div>
+        <!-- this is- the side  bar container -->
+        <button class="sideBar-btn block lg:hidden">
+          <img src="../../assets//side-bar-btn.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- this is the main section -->
+  <main class="  ">
+    <div class="container">
+      <!-- this is the main section -->
+      <div class="stepper-container my-10 w-full flex justify-center items-center">
+        <!-- this stepper is for the big screens -->
+        <img src="/assets/bigFirstSteper.svg" alt="" class="max-w-full hidden sm:block" />
+        <!-- this steppers is for the small screens -->
+        <div class="small_stepper w-full flex sm:hidden flex-col relative gap-5">
+          <img src="/assets/SmallFirstStepper.svg" alt="" class="min-h-[30px] min-w-full" />
+          <div class="step_info flex flex-col gap-2 ml-2">
+            <span class="text-desc-gray text-sm">Step 1</span>
+            <h5 class="text-main-blue text-lg font-medium">Basic Info</h5>
           </div>
-          <!-- this section is for the buttons -->
-          <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
-            <a
-              href="../login/login.html"
-              class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue"
-              >connection</a
-            >
-            <a
-              href="../contact/contact.html"
-              class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue"
-              >Contacter</a
-            >
-          </div>
-          <!-- this is- the side  bar container -->
-          <button class="sideBar-btn block lg:hidden">
-            <img
-              src="../../assets//side-bar-btn.png"
-              alt=""
-            />
-          </button>
         </div>
       </div>
-    </header>
-    <!-- this is the main section -->
-    <main class="  ">
-      <div class="container">
-        <!-- this is the main section -->
-        <div class="stepper-container my-10 w-full flex justify-center items-center">
-          <!-- this stepper is for the big screens -->
-          <img
-            src="/assets/bigFirstSteper.svg"
-            alt=""
-            class="max-w-full hidden sm:block"
-          />
-          <!-- this steppers is for the small screens -->
-          <div class="small_stepper w-full flex sm:hidden flex-col relative gap-5">
-            <img
-              src="/assets/SmallFirstStepper.svg"
-              alt=""
-              class="min-h-[30px] min-w-full"
-            />
-            <div class="step_info flex flex-col gap-2 ml-2">
-              <span class="text-desc-gray text-sm">Step 1</span>
-              <h5 class="text-main-blue text-lg font-medium">Basic Info</h5>
+      <!-- this is the form  -->
+      <form action="" class="px-5 py-10 md:p-10 flex flex-col gap-12 w-full bg-whtie rounded-2xl bg-white">
+        <div class="firs-form-row w-full flex justify-between md:gap-4 items-center flex-col md:flex-row">
+          <div class="form-column w-full flex flex-col gap-3 md:basis-5/12">
+            <label for="aller" class="text-paragraph-blue font-semibold text-sm">Aller de</label>
+            <div class="input-container w-10/12 md:w-full relative">
+              <input id="aller" type="text"
+                class="rounded-2xl w-full outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
+                placeholder="Adresse, ville ou lieu" />
+              <!-- this is the location icon -->
+              <img src="/assets/location_icon.svg" alt=""
+                class="block md:hidden absolute right-3 top-1/2 -translate-y-1/2" />
             </div>
           </div>
-        </div>
-        <!-- this is the form  -->
-        <form
-          action=""
-          class="px-5 py-10 md:p-10 flex flex-col gap-12 w-full bg-whtie rounded-2xl bg-white"
-        >
-          <div class="firs-form-row w-full flex justify-between md:gap-4 items-center flex-col md:flex-row">
-            <div class="form-column w-full flex flex-col gap-3 md:basis-5/12">
-              <label
-                for="aller"
-                class="text-paragraph-blue font-semibold text-sm"
-                >Aller de</label
-              >
-              <div class="input-container w-10/12 md:w-full relative">
-                <input
-                  id="aller"
-                  type="text"
-                  class="rounded-2xl w-full outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
-                  placeholder="Adresse, ville ou lieu"
-                />
-                <!-- this is the location icon -->
-                <img
-                  src="/assets/location_icon.svg"
-                  alt=""
-                  class="block md:hidden absolute right-3 top-1/2 -translate-y-1/2"
-                />
-              </div>
-            </div>
-            <div class="button-container flex w-full md:w-fit justify-end md:justify-center md:items-center">
-              <button class="mt-8 direction_svg rotate-90 md:rotate-0">
-                <svg
-                  width="36"
-                  height="36"
-                  viewBox="0 0 36 36"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16.0602 12.075C16.0602 12.2407 16.1945 12.375 16.3602 12.375L29.2715 12.375C29.4372 12.375 29.5715 12.5093 29.5715 12.675L29.5715 14.325C29.5715 14.4907 29.4372 14.625 29.2715 14.625L16.3602 14.625C16.1945 14.625 16.0602 14.7593 16.0602 14.925L16.0602 17.2744C16.0602 17.5419 15.7367 17.6757 15.5478 17.4863L11.7828 13.7119C11.666 13.5948 11.666 13.4052 11.7828 13.2881L15.5478 9.51368C15.7367 9.32433 16.0602 9.45809 16.0602 9.72555L16.0602 12.075Z"
-                    fill="#737F89"
-                  />
-                  <path
-                    d="M19.9398 21.075C19.9398 21.2407 19.8055 21.375 19.6398 21.375L6.72859 21.375C6.5629 21.375 6.42859 21.5093 6.42859 21.675V23.325C6.42859 23.4907 6.5629 23.625 6.72859 23.625H19.6398C19.8055 23.625 19.9398 23.7593 19.9398 23.925V26.2745C19.9398 26.5419 20.2634 26.6757 20.4522 26.4863L24.2173 22.7119C24.3341 22.5948 24.3341 22.4052 24.2173 22.2881L20.4522 18.5137C20.2634 18.3243 19.9398 18.4581 19.9398 18.7255V21.075Z"
-                    fill="#737F89"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            <div class="form-column w-full flex flex-col gap-4 basis-[45%]">
-              <label
-                for="vers"
-                class="text-paragraph-blue font-semibold text-sm"
-                >Vers</label
-              >
-              <div class="input-container w-10/12 md:w-full relative">
-                <input
-                  id="vers"
-                  type="text"
-                  class="rounded-2xl w-full text-paragraph-blue outline-none px-5 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
-                  placeholder="Adresse, ville ou lieu"
-                />
-                <img
-                  src="/assets/location_icon.svg"
-                  class="block md:hidden absolute right-3 top-1/2 -translate-y-1/2"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="second-form-row">
-            <h4 class="text-[#39424A] text-lg font-medium">Type de Trajet</h4>
-            <div class="inputs py-5 flex flex-col md:flex-row gap-10">
-              <div class="input-container">
-                <input
-                  type="radio"
-                  name="travel_type"
-                  id="aller_sans_retour"
-                  class="aller_radio_input"
-                />
-                <label
-                  for="aller_sans_retour"
-                  class="text-desc-gray text-sm md:text-base"
-                  >Aller seulement</label
-                >
-              </div>
-              <div class="input-container">
-                <input
-                  type="radio"
-                  name="travel_type"
-                  id="aller_avec_retour"
-                  class="retour_radio_input"
-                />
-                <label
-                  for="aller_avec_retour"
-                  class="text-desc-gray text-sm md:text-base"
-                  >Aller & Retour</label
-                >
-              </div>
-            </div>
-          </div>
-          <!-- this is the aller dates container -->
-          <div class="third-form-row flex items-center gap-10">
-            <span class="text-desc-gray text-sm block min-w-fit p-1">Aller :</span>
-            <!-- those are the inputs -->
-            <div class="inputs-container w-full md:w-9/12 flex flex-col md:flex-row gap-5">
-              <div class="form-column flex flex-col gap-4 w-full md:basis-6/12">
-                <label
-                  for="date"
-                  class="text-paragraph-blue font-semibold text-sm"
-                  >Date</label
-                >
-                <input
-                  id="date"
-                  type="date"
-                  class="rounded-2xl focus:border-main-blue text-paragraph-blue outline-none px-4 py-3 border-2 border-sec-gray border-solid"
-                  placeholder="12-12-2023"
-                />
-              </div>
-              <div class="form-column flex flex-col gap-4 w-2/3 md:basis-2/12">
-                <label
-                  for="time"
-                  class="text-paragraph-blue font-semibold text-sm"
-                  >Horraire</label
-                >
-                <input
-                  id="time"
-                  type="time"
-                  class="rounded-2xl focus:border-main-blue text-paragraph-blue outline-none px-4 py-3 border-2 border-sec-gray border-solid"
-                  placeholder="Adresse, ville ou lieu"
-                />
-              </div>
-            </div>
-          </div>
-          <!-- this is the aller dates container -->
-          <div class="fourth-form-row flex items-center gap-8">
-            <span class="text-desc-gray text-sm block min-w-fit p-1">Retour : </span>
-            <!-- those are the inputs -->
-            <div class="inputs-container w-full md:w-9/12 flex flex-col md:flex-row gap-5">
-              <div class="form-column flex flex-col gap-4 w-full md:basis-6/12">
-                <label
-                  for="date"
-                  class="text-paragraph-blue font-semibold text-sm"
-                  >Date</label
-                >
-                <input
-                  id="date"
-                  type="date"
-                  class="rounded-2xl retour_date_input focus:border-main-blue text-paragraph-blue outline-none px-4 py-3 border-2 border-sec-gray border-solid"
-                  placeholder="12-12-2023"
-                />
-              </div>
-              <div class="form-column flex flex-col gap-4 w-2/3 md:basis-2/12">
-                <label
-                  for="time"
-                  class="text-paragraph-blue font-semibold text-sm"
-                  >Horraire</label
-                >
-                <input
-                  id="time"
-                  type="time"
-                  class="rounded-2xl retour_hour_input focus:border-main-blue text-paragraph-blue outline-none px-4 py-3 border-2 border-sec-gray border-solid"
-                  placeholder="Adresse, ville ou lieu"
-                />
-              </div>
-            </div>
-          </div>
-          <!-- this is the bags section -->
-          <div class="fifth-form-row flex flex-col pt-2">
-            <h4 class="text-[#39424A] text-lg font-medium">Personnes & baggages</h4>
-            <div class="inputs_container w-full py-5 flex justify-between gap-2 md:gap-10 items-center">
-              <div class="form-column w-full flex flex-col gap-3">
-                <label
-                  for="bags_number"
-                  class="text-paragraph-blue font-semibold text-sm"
-                  >Nb bagages+5kg</label
-                >
-
-                <input
-                  id="bags_number"
-                  type="number"
-                  class="rounded-2xl w-full outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
-                  placeholder="Adresse, ville ou lieu"
-                />
-              </div>
-
-              <div class="form-column w-full flex flex-col gap-4">
-                <label
-                  for="passengers_number"
-                  class="text-paragraph-blue font-semibold text-sm"
-                  >Nb passagers</label
-                >
-
-                <input
-                  id="passengers_number"
-                  type="text"
-                  class="rounded-2xl w-full text-paragraph-blue outline-none px-5 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
-                  placeholder="Adresse, ville ou lieu"
-                />
-              </div>
-            </div>
-          </div>
-          <!-- this is the  preferences section -->
-          <div class="sixth-form-row flex flex-col gap-3">
-            <label
-              for="preferences"
-              class="text-[#39424A] text-lg font-medium"
-              >Special Preferences</label
-            >
-            <div class="text-area-container">
-              <textarea
-                class="preferences rounded-2xl resize-none w-full outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
-                name=""
-                id="preferences"
-                cols="30"
-                rows="6"
-              ></textarea>
-              <!-- this is for the length of the textArea content -->
-              <p class="text-desc-gray text-base text-end py-2"><span class="preferences_length"></span> /200</p>
-            </div>
-          </div>
-          <!-- this is the button -->
-          <div class="button-container w-full flex justify-end">
-            <button class="main_button text-sm md:text-base bg-main-blue duration-300 px-5 md:px-10 py-2 text-white flex justify-center items-center font-medium rounded-2xl gap-2">
-              <span class="capitalize">étape suivante</span>
-              <img
-                src="/assets/right_arrow.svg"
-                alt=""
-              />
+          <div class="button-container flex w-full md:w-fit justify-end md:justify-center md:items-center">
+            <button class="mt-8 direction_svg rotate-90 md:rotate-0">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.0602 12.075C16.0602 12.2407 16.1945 12.375 16.3602 12.375L29.2715 12.375C29.4372 12.375 29.5715 12.5093 29.5715 12.675L29.5715 14.325C29.5715 14.4907 29.4372 14.625 29.2715 14.625L16.3602 14.625C16.1945 14.625 16.0602 14.7593 16.0602 14.925L16.0602 17.2744C16.0602 17.5419 15.7367 17.6757 15.5478 17.4863L11.7828 13.7119C11.666 13.5948 11.666 13.4052 11.7828 13.2881L15.5478 9.51368C15.7367 9.32433 16.0602 9.45809 16.0602 9.72555L16.0602 12.075Z"
+                  fill="#737F89" />
+                <path
+                  d="M19.9398 21.075C19.9398 21.2407 19.8055 21.375 19.6398 21.375L6.72859 21.375C6.5629 21.375 6.42859 21.5093 6.42859 21.675V23.325C6.42859 23.4907 6.5629 23.625 6.72859 23.625H19.6398C19.8055 23.625 19.9398 23.7593 19.9398 23.925V26.2745C19.9398 26.5419 20.2634 26.6757 20.4522 26.4863L24.2173 22.7119C24.3341 22.5948 24.3341 22.4052 24.2173 22.2881L20.4522 18.5137C20.2634 18.3243 19.9398 18.4581 19.9398 18.7255V21.075Z"
+                  fill="#737F89" />
+              </svg>
             </button>
           </div>
-        </form>
-      </div>
-    </main>
-  </body>
-  <script src="./StepOne.js"></script>
+
+          <div class="form-column w-full flex flex-col gap-4 basis-[45%]">
+            <label for="vers" class="text-paragraph-blue font-semibold text-sm">Vers</label>
+            <div class="input-container w-10/12 md:w-full relative">
+              <input id="vers" type="text"
+                class="rounded-2xl w-full text-paragraph-blue outline-none px-5 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
+                placeholder="Adresse, ville ou lieu" />
+              <img src="/assets/location_icon.svg" class="block md:hidden absolute right-3 top-1/2 -translate-y-1/2"
+                alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="second-form-row">
+          <h4 class="text-[#39424A] text-lg font-medium">Type de Trajet</h4>
+          <div class="inputs py-5 flex flex-col md:flex-row gap-10">
+            <div class="input-container">
+              <input type="radio" name="travel_type" id="aller_sans_retour" class="aller_radio_input" />
+              <label for="aller_sans_retour" class="text-desc-gray text-sm md:text-base">Aller seulement</label>
+            </div>
+            <div class="input-container">
+              <input type="radio" name="travel_type" id="aller_avec_retour" class="retour_radio_input" />
+              <label for="aller_avec_retour" class="text-desc-gray text-sm md:text-base">Aller & Retour</label>
+            </div>
+          </div>
+        </div>
+        <!-- this is the aller dates container -->
+        <div class="third-form-row flex items-center gap-10">
+          <span class="text-desc-gray text-sm block min-w-fit p-1">Aller :</span>
+          <!-- those are the inputs -->
+          <div class="inputs-container w-full md:w-9/12 flex flex-col md:flex-row gap-5">
+            <div class="form-column flex flex-col gap-4 w-full md:basis-6/12">
+              <label for="date" class="text-paragraph-blue font-semibold text-sm">Date</label>
+              <input id="date" type="date"
+                class="rounded-2xl focus:border-main-blue text-paragraph-blue outline-none px-4 py-3 border-2 border-sec-gray border-solid"
+                placeholder="12-12-2023" />
+            </div>
+            <div class="form-column flex flex-col gap-4 w-2/3 md:basis-2/12">
+              <label for="time" class="text-paragraph-blue font-semibold text-sm">Horraire</label>
+              <input id="time" type="time"
+                class="rounded-2xl focus:border-main-blue text-paragraph-blue outline-none px-4 py-3 border-2 border-sec-gray border-solid"
+                placeholder="Adresse, ville ou lieu" />
+            </div>
+          </div>
+        </div>
+        <!-- this is the aller dates container -->
+        <div class="fourth-form-row flex items-center gap-8">
+          <span class="text-desc-gray text-sm block min-w-fit p-1">Retour : </span>
+          <!-- those are the inputs -->
+          <div class="inputs-container w-full md:w-9/12 flex flex-col md:flex-row gap-5">
+            <div class="form-column flex flex-col gap-4 w-full md:basis-6/12">
+              <label for="date" class="text-paragraph-blue font-semibold text-sm">Date</label>
+              <input id="date" type="date"
+                class="rounded-2xl retour_date_input focus:border-main-blue text-paragraph-blue outline-none px-4 py-3 border-2 border-sec-gray border-solid"
+                placeholder="12-12-2023" />
+            </div>
+            <div class="form-column flex flex-col gap-4 w-2/3 md:basis-2/12">
+              <label for="time" class="text-paragraph-blue font-semibold text-sm">Horraire</label>
+              <input id="time" type="time"
+                class="rounded-2xl retour_hour_input focus:border-main-blue text-paragraph-blue outline-none px-4 py-3 border-2 border-sec-gray border-solid"
+                placeholder="Adresse, ville ou lieu" />
+            </div>
+          </div>
+        </div>
+        <!-- this is the bags section -->
+        <div class="fifth-form-row flex flex-col pt-2">
+          <h4 class="text-[#39424A] text-lg font-medium">Personnes & baggages</h4>
+          <div class="inputs_container w-full py-5 flex justify-between gap-2 md:gap-10 items-center">
+            <div class="form-column w-full flex flex-col gap-3">
+              <label for="bags_number" class="text-paragraph-blue font-semibold text-sm">Nb bagages+5kg</label>
+
+              <input id="bags_number" type="number"
+                class="rounded-2xl w-full outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
+                placeholder="Adresse, ville ou lieu" />
+            </div>
+
+            <div class="form-column w-full flex flex-col gap-4">
+              <label for="passengers_number" class="text-paragraph-blue font-semibold text-sm">Nb passagers</label>
+
+              <input id="passengers_number" type="text"
+                class="rounded-2xl w-full text-paragraph-blue outline-none px-5 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
+                placeholder="Adresse, ville ou lieu" />
+            </div>
+          </div>
+        </div>
+        <!-- this is the  preferences section -->
+        <div class="sixth-form-row flex flex-col gap-3">
+          <label for="preferences" class="text-[#39424A] text-lg font-medium">Special Preferences</label>
+          <div class="text-area-container">
+            <textarea
+              class="preferences rounded-2xl resize-none w-full outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
+              name="" id="preferences" cols="30" rows="6"></textarea>
+            <!-- this is for the length of the textArea content -->
+            <p class="text-desc-gray text-base text-end py-2"><span class="preferences_length"></span> /200</p>
+          </div>
+        </div>
+        <!-- this is the button -->
+        <div class="button-container w-full flex justify-end">
+          <button
+            class="main_button text-sm md:text-base bg-main-blue duration-300 px-5 md:px-10 py-2 text-white flex justify-center items-center font-medium rounded-2xl gap-2">
+            <span class="capitalize">étape suivante</span>
+            <img src="/assets/right_arrow.svg" alt="" />
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+<script src="./StepOne.js"></script>
+
 </html>

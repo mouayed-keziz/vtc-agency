@@ -1,512 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="../../dist/output.css"
-    />
-    <!-- this link is for the swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <title>services</title>
-  </head>
-  <body class="bg-main-white overflow-x-hidden">
-    <!-- this is the header -->
-    <header class="py-10">
-      <div class="container relative mt-12 rounded-2xl h-20 6 md:px-8 flex items-center md:bg-white">
-        <div class="items h-full w-full flex justify-between">
-          <!-- this section is for the logo and the links -->
-          <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
-            <a
-              class="block min-h-fit min-w-fit"
-              href="../home/home.html"
-            >
-              <img
-                src="../../assets//logo.svg"
-                alt=""
-              />
-            </a>
-            <!-- those are the links -->
-            <ul class="side-bar w-screen duration-700 z-40 bg-white rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../home/home.html">Accueil</a>
-              </li>
-              <li class="selected hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../services/services.html">Services</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../about/about.html">À propos</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../blog/blog.html">Blog</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../contact/contact.html">Contacts</a>
-              </li>
-              <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
-                <button class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue">connection</button>
-              </li>
-              <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
-                <button class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</button>
-              </li>
-            </ul>
-          </div>
-          <!-- this section is for the buttons -->
-          <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
-            <a
-              href="../login/login.html"
-              class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue"
-              >connection</a
-            >
 
-            <a
-              href="../contact/contact.html"
-              class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue"
-              >Contacter</a
-            >
-          </div>
-          <!-- this is- the side  bar container -->
-          <button class="sideBar-btn block lg:hidden">
-            <img
-              src="../../assets//side-bar-btn.png"
-              alt=""
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../dist/output.css" />
+  <!-- this link is for the swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <title>services</title>
+</head>
+
+<body class="bg-main-white overflow-x-hidden">
+  <!-- this is the header -->
+  <header class="py-10">
+    <div class="container relative mt-12 rounded-2xl h-20 6 md:px-8 flex items-center md:bg-white">
+      <div class="items h-full w-full flex justify-between">
+        <!-- this section is for the logo and the links -->
+        <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
+          <a class="block min-h-fit min-w-fit" href="../home/home.html">
+            <img src="../../assets//logo.svg" alt="" />
+          </a>
+          <!-- those are the links -->
+          <ul
+            class="side-bar w-screen duration-700 z-40 bg-white rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../home/home.html">Accueil</a>
+            </li>
+            <li class="selected hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../services/services.html">Services</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../about/about.html">À propos</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../blog/blog.html">Blog</a>
+            </li>
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../contact/contact.html">Contacts</a>
+            </li>
+            <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
+              <button
+                class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue">connection</button>
+            </li>
+            <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
+              <button
+                class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</button>
+            </li>
+          </ul>
+        </div>
+        <!-- this section is for the buttons -->
+        <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
+          <a href="../login/login.html"
+            class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue">connection</a>
+
+          <a href="../contact/contact.html"
+            class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</a>
+        </div>
+        <!-- this is- the side  bar container -->
+        <button class="sideBar-btn block lg:hidden">
+          <img src="../../assets//side-bar-btn.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- this is the hero section -->
+  <section class="hero py-10 md:py-14">
+    <div class="container">
+      <div class="top-section w-full flex justify-between">
+        <div class="text-container flex flex-col gap-3 lg:gap-7 lg:max-w-[50%]">
+          <h1 class="text-title-blue text-[30px] leadgin-[40px] md:leading-[56px] md:text-[44px] font-bold">
+            Gestion De Navettes <br />
+            Aéroport
+          </h1>
+          <p class="text-desc-gray text-base w-full lg:w-2/3">Le service de gestion de navettes aéroport est un service
+            qui permet aux voyageurs de réserver une navette pour les emmener de l'aéroport à leur destination finale ou
+            vice versa. Ce service peut être offert par des entreprises de transport ou des agences de voyage.</p>
+          <!-- this is call to action button -->
+          <button class="service_button flex w-fit items-center mt-4 lg:mt-0 gap-5">
+            <span class="arrow_container duration-300 bg-main-blue flex justify-center w-14 h-14 rounded-full">
+              <img src="../../assets/right_arrow.svg" alt="" class="w-10" />
+            </span>
+            <span class="duration-300 text-main-blue font-semibold text-base"> Demande de Service </span>
           </button>
         </div>
+        <!-- this is the image -->
+        <img class="hidden lg:block max-h-[450px] max-w-full object-fill" src="../../assets/services_hero.png" alt="" />
       </div>
-    </header>
-    <!-- this is the hero section -->
-    <section class="hero py-10 md:py-14">
-      <div class="container">
-        <div class="top-section w-full flex justify-between">
-          <div class="text-container flex flex-col gap-3 lg:gap-7 lg:max-w-[50%]">
-            <h1 class="text-title-blue text-[30px] leadgin-[40px] md:leading-[56px] md:text-[44px] font-bold">
-              Gestion De Navettes <br />
-              Aéroport
-            </h1>
-            <p class="text-desc-gray text-base w-full lg:w-2/3">Le service de gestion de navettes aéroport est un service qui permet aux voyageurs de réserver une navette pour les emmener de l'aéroport à leur destination finale ou vice versa. Ce service peut être offert par des entreprises de transport ou des agences de voyage.</p>
-            <!-- this is call to action button -->
-            <button class="service_button flex w-fit items-center mt-4 lg:mt-0 gap-5">
-              <span class="arrow_container duration-300 bg-main-blue flex justify-center w-14 h-14 rounded-full">
-                <img
-                  src="../../assets/right_arrow.svg"
-                  alt=""
-                  class="w-10"
-                />
-              </span>
-              <span class="duration-300 text-main-blue font-semibold text-base"> Demande de Service </span>
-            </button>
-          </div>
-          <!-- this is the image -->
-          <img
-            class="hidden lg:block max-h-[450px] max-w-full object-fill"
-            src="../../assets/services_hero.png"
-            alt=""
-          />
-        </div>
-        <!-- this is the swiper section -->
-        <div class="swiper-container rounded-2xl w-full flex justify-center items-center relative z-40">
-          <div class="swiper services-swiper rounded-2xl w-[350px] h-[170px] mt-10 lg:-mt-20">
-            <div class="swiper-wrapper rounded-2xl h-full services-swiper-wrapper min-w-full">
-              <article class="swiper-slide services-swiper-slide h-full services-swiper-slide single-item rounded-2xl p-5 bg-white flex flex-col gap-5">
-                <div class="user-info flex item-center gap-5">
-                  <img
-                    src="../../assets/testimonials-1.png"
-                    alt=""
-                    class="rounded-[50%]"
-                  />
-                  <div class="info flex flex-col justify-center gap-1">
-                    <span class="name text-paragraph-blue font-semibold"> James Smith </span>
-                    <span class="email text-xs text-desc-gray font-semibold"> CEO of Nexus Dynamics Ltd. </span>
-                  </div>
+      <!-- this is the swiper section -->
+      <div class="swiper-container rounded-2xl w-full flex justify-center items-center relative z-40">
+        <div class="swiper services-swiper rounded-2xl w-[350px] h-[170px] mt-10 lg:-mt-20">
+          <div class="swiper-wrapper rounded-2xl h-full services-swiper-wrapper min-w-full">
+            <article
+              class="swiper-slide services-swiper-slide h-full services-swiper-slide single-item rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img src="../../assets/testimonials-1.png" alt="" class="rounded-[50%]" />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> James Smith </span>
+                  <span class="email text-xs text-desc-gray font-semibold"> CEO of Nexus Dynamics Ltd. </span>
                 </div>
-                <p class="opinion text-paragraph-blue text-sm">Impressive results! I've never seen my yard look so beautiful. Thank you.</p>
-              </article>
-              <article class="swiper-slide services-swiper-slide services-swiper-slide single-item rounded-2xl p-5 bg-white flex flex-col gap-5">
-                <div class="user-info flex item-center gap-5">
-                  <img
-                    src="../../assets/testimonials-2.png"
-                    alt=""
-                    class="rounded-[50%]"
-                  />
-                  <div class="info flex flex-col justify-center gap-1">
-                    <span class="name text-paragraph-blue font-semibold"> James Smith </span>
-                    <span class="email text-xs text-desc-gray font-semibold"> CEO of Nexus Dynamics Ltd. </span>
-                  </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-sm">Impressive results! I've never seen my yard look so
+                beautiful. Thank you.</p>
+            </article>
+            <article
+              class="swiper-slide services-swiper-slide services-swiper-slide single-item rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img src="../../assets/testimonials-2.png" alt="" class="rounded-[50%]" />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> James Smith </span>
+                  <span class="email text-xs text-desc-gray font-semibold"> CEO of Nexus Dynamics Ltd. </span>
                 </div>
-                <p class="opinion text-paragraph-blue text-sm">Impressive results! I've never seen my yard look so beautiful. Thank you.</p>
-              </article>
-            </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-sm">Impressive results! I've never seen my yard look so
+                beautiful. Thank you.</p>
+            </article>
           </div>
         </div>
       </div>
-    </section>
-    <!-- this is the vehicular section -->
-    <section class="vehicules py-14">
-      <div class="container">
-        <h1 class="text-center text-2xl font-bold text-title-blue">Véhicules Disponible</h1>
-        <div class="cars-container mt-10 flex flex-wrap gap-5 justify-between items-center">
-          <article class="single-car flex flex-col gap-10 justify-center py-5 px-7 w-[340px] h-[420px] rounded-2xl bg-white">
-            <!-- this is the image  -->
-            <img
-              class="w-[300px] h-[170px] object-fill self-center"
-              src="../../assets/service-car1.png"
-              alt=""
-            />
-            <!-- this is the description -->
-            <div class="description flex flex-col gap-2">
-              <h5 class="text-xl text-title-blue font-semibold">BERLINE PRO</h5>
-              <ul class="flex flex-col gap-1">
-                <li class="text-desc-gray font-light text-base">4 places</li>
-                <li class="text-desc-gray font-light text-base">Tout options</li>
-                <li class="text-desc-gray font-light text-base">Service D'accueil</li>
-                <li class="text-desc-gray font-light text-base">Annulation gratuite 24H</li>
-              </ul>
-            </div>
-          </article>
-          <article class="single-car flex flex-col gap-10 justify-center py-5 px-7 w-[340px] h-[420px] rounded-2xl bg-white">
-            <!-- this is the image  -->
-            <img
-              class="w-[300px] h-[170px] object-fill self-center"
-              src="../../assets/service-car2.png"
-              alt=""
-            />
-            <!-- this is the description -->
-            <div class="description flex flex-col gap-2">
-              <h5 class="text-xl text-title-blue font-semibold">BERLINE</h5>
-              <ul class="flex flex-col gap-1">
-                <li class="text-desc-gray font-light text-base">4 places</li>
-                <li class="text-desc-gray font-light text-base">Tout options</li>
-                <li class="text-desc-gray font-light text-base">Service D'accueil</li>
-                <li class="text-desc-gray font-light text-base">Annulation gratuite 24H</li>
-              </ul>
-            </div>
-          </article>
-          <article class="single-car flex flex-col gap-10 justify-center py-5 px-7 w-[340px] h-[420px] rounded-2xl bg-white">
-            <!-- this is the image  -->
-            <img
-              class="w-[300px] h-[170px] object-fill self-center"
-              src="../../assets/service-car3.png"
-              alt=""
-            />
-            <!-- this is the description -->
-            <div class="description flex flex-col gap-2">
-              <h5 class="text-xl text-title-blue font-semibold">VAN</h5>
-              <ul class="flex flex-col gap-1">
-                <li class="text-desc-gray font-light text-base">4 places</li>
-                <li class="text-desc-gray font-light text-base">Tout options</li>
-                <li class="text-desc-gray font-light text-base">Service D'accueil</li>
-                <li class="text-desc-gray font-light text-base">Annulation gratuite 24H</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- this is other services section -->
-    <section class="vehicules py-16">
-      <div class="container">
-        <h1 class="text-center text-2xl font-bold text-title-blue">Voir D’autre Services</h1>
-        <div class="services-container mt-10 gap-5 flex flex-wrap justify-between items-center">
-          <article class="single_service w-full md:w-[48%] flex items-center gap-5 justify-between px-7 py-5 rounded-2xl bg-white">
-            <span class="text-paragraph-blue text-sm md:text-lg font-medium">Gestion de navettes aéroport</span>
-            <span class="w-9 h-9 service_arrow flex justify-center items-center bg-main-blue rounded-full duration-300">
-              <img
-                class="w-7 h-7"
-                src="../../assets/right_arrow.svg"
-                alt=""
-              />
-            </span>
-          </article>
-          <article class="single_service w-full md:w-[48%] flex items-center gap-5 justify-between px-7 py-5 rounded-2xl bg-white">
-            <span class="text-paragraph-blue text-sm md:text-lg font-medium">Gestion transfert professionnel</span>
-            <span class="w-9 h-9 service_arrow flex justify-center items-center bg-main-blue rounded-full duration-300">
-              <img
-                class="w-7 h-7"
-                src="../../assets/right_arrow.svg"
-                alt=""
-              />
-            </span>
-          </article>
-          <article class="single_service w-full md:w-[48%] flex items-center gap-5 justify-between px-7 py-5 rounded-2xl bg-white">
-            <span class="text-paragraph-blue text-sm md:text-lg font-medium">Gestion de navette gares il de france</span>
-            <span class="w-9 h-9 service_arrow flex justify-center items-center bg-main-blue rounded-full duration-300">
-              <img
-                class="w-7 h-7"
-                src="../../assets/right_arrow.svg"
-                alt=""
-              />
-            </span>
-          </article>
-          <article class="single_service w-full md:w-[48%] flex items-center gap-5 justify-between px-7 py-5 rounded-2xl bg-white">
-            <span class="text-paragraph-blue text-sm md:text-lg font-medium">Gestion des mis à disposition</span>
-            <span class="w-9 h-9 service_arrow flex justify-center items-center bg-main-blue rounded-full duration-300">
-              <img
-                class="w-7 h-7"
-                src="../../assets/right_arrow.svg"
-                alt=""
-              />
-            </span>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- this is the contact section -->
-    <section class="contact pt-12">
-      <div class="container">
-        <h1 class="text-center text-2xl font-bold text-title-blue">Nous Contacter</h1>
-        <div class="content w-full">
-          <div class="form-container py-5 relative mt-14 w-full lg:w-[55%] xl:w-[45%] mx-auto">
-            <!-- this is the form -->
-            <form
-              action=""
-              class="rounded-2xl flex flex-col gap-5 z-30 p-5 bg-white relative"
-            >
-              <div class="form-column m flex flex-col gap-3 w-full">
-                <label
-                  for="Nom"
-                  class="text-paragraph-blue font-semibold"
-                  >Nom Complet</label
-                >
-                <input
-                  id="nom"
-                  type="text"
-                  class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
-                  placeholder="Nom"
-                />
-              </div>
-              <div class="form-column flex flex-col gap-3 w-full">
-                <label
-                  for="email"
-                  class="text-paragraph-blue font-semibold"
-                  >Email</label
-                >
-                <input
-                  id="email"
-                  type="email"
-                  class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
-                  placeholder="example@gmail.com"
-                />
-              </div>
-              <div class="form-column flex flex-col gap-3 w-full">
-                <label
-                  for="entreprise"
-                  class="text-paragraph-blue font-semibold"
-                  >Societe/Entreprise</label
-                >
-                <input id="entreprise type="email" class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid" placeholder="VTC / CAB " />
-              </div>
-              <div class="form-column flex flex-col gap-3 w-full">
-                <label
-                  for="entreprise"
-                  class="text-paragraph-blue font-semibold"
-                  >Message</label
-                >
-                <textarea
-                  class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid resize-none"
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="5"
-                ></textarea>
-              </div>
-              <!-- this is the bottom section of the form -->
-              <div class="form-column mt-5 flex justify-end md:justify-between items-center">
-                <div class="checkbox-cotainer hidden md:block">
-                  <input
-                    class=""
-                    type="checkbox"
-                    name="accepted"
-                    id="terms"
-                  />
-                  <label
-                    for="terms"
-                    class="text-title-blue font-normal text-sm"
-                  >
-                    j’accepte les
-                    <a
-                      href="/terms"
-                      class="underline"
-                      >Politiques de Confidentialité</a
-                    >
-                    de CAB VTC
-                  </label>
-                </div>
-                <!-- this is the submittion button -->
-                <button class="rounded-xl main_button duration-300 flex items-center gap-2 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">
-                  <span>Envoyer</span>
-                  <img
-                    src="../../assets/send_icon.svg"
-                    alt=""
-                  />
-                </button>
-              </div>
-            </form>
-            <!-- those are the contact assets -->
-            <img
-              class="absolute hidden lg:block -left-64 xl:-left-72 top-[20%]"
-              src="../../assets/phone.png"
-              alt=""
-            />
-            <img
-              class="absolute -left-9 -bottom-20 lg:-left-52 lg:bottom-24"
-              src="../../assets/earth.png"
-              alt=""
-            />
-            <img
-              class="absolute hidden lg:block -right-60 xl:-right-80 bottom-8"
-              src="../../assets/letter_container.png"
-              alt=""
-            />
-            <img
-              class="absolute -top-10 -right-16 md:-right-24 z-0"
-              src="../../assets/duration_icon.png"
-              alt=""
-            />
-            <!-- this is the points image -->
-            <img
-              class="absolute -top-10 z-[-1] -left-24 hidden lg:block"
-              src="../../assets/points.png"
-              alt=""
-            />
+    </div>
+  </section>
+  <!-- this is the vehicular section -->
+  <section class="vehicules py-14">
+    <div class="container">
+      <h1 class="text-center text-2xl font-bold text-title-blue">Véhicules Disponible</h1>
+      <div class="cars-container mt-10 flex flex-wrap gap-5 justify-between items-center">
+        <article
+          class="single-car flex flex-col gap-10 justify-center py-5 px-7 w-[340px] h-[420px] rounded-2xl bg-white">
+          <!-- this is the image  -->
+          <img class="w-[300px] h-[170px] object-fill self-center" src="../../assets/service-car1.png" alt="" />
+          <!-- this is the description -->
+          <div class="description flex flex-col gap-2">
+            <h5 class="text-xl text-title-blue font-semibold">BERLINE PRO</h5>
+            <ul class="flex flex-col gap-1">
+              <li class="text-desc-gray font-light text-base">4 places</li>
+              <li class="text-desc-gray font-light text-base">Tout options</li>
+              <li class="text-desc-gray font-light text-base">Service D'accueil</li>
+              <li class="text-desc-gray font-light text-base">Annulation gratuite 24H</li>
+            </ul>
           </div>
+        </article>
+        <article
+          class="single-car flex flex-col gap-10 justify-center py-5 px-7 w-[340px] h-[420px] rounded-2xl bg-white">
+          <!-- this is the image  -->
+          <img class="w-[300px] h-[170px] object-fill self-center" src="../../assets/service-car2.png" alt="" />
+          <!-- this is the description -->
+          <div class="description flex flex-col gap-2">
+            <h5 class="text-xl text-title-blue font-semibold">BERLINE</h5>
+            <ul class="flex flex-col gap-1">
+              <li class="text-desc-gray font-light text-base">4 places</li>
+              <li class="text-desc-gray font-light text-base">Tout options</li>
+              <li class="text-desc-gray font-light text-base">Service D'accueil</li>
+              <li class="text-desc-gray font-light text-base">Annulation gratuite 24H</li>
+            </ul>
+          </div>
+        </article>
+        <article
+          class="single-car flex flex-col gap-10 justify-center py-5 px-7 w-[340px] h-[420px] rounded-2xl bg-white">
+          <!-- this is the image  -->
+          <img class="w-[300px] h-[170px] object-fill self-center" src="../../assets/service-car3.png" alt="" />
+          <!-- this is the description -->
+          <div class="description flex flex-col gap-2">
+            <h5 class="text-xl text-title-blue font-semibold">VAN</h5>
+            <ul class="flex flex-col gap-1">
+              <li class="text-desc-gray font-light text-base">4 places</li>
+              <li class="text-desc-gray font-light text-base">Tout options</li>
+              <li class="text-desc-gray font-light text-base">Service D'accueil</li>
+              <li class="text-desc-gray font-light text-base">Annulation gratuite 24H</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- this is other services section -->
+  <section class="vehicules py-16">
+    <div class="container">
+      <h1 class="text-center text-2xl font-bold text-title-blue">Voir D’autre Services</h1>
+      <div class="services-container mt-10 gap-5 flex flex-wrap justify-between items-center">
+        <article
+          class="single_service w-full md:w-[48%] flex items-center gap-5 justify-between px-7 py-5 rounded-2xl bg-white">
+          <span class="text-paragraph-blue text-sm md:text-lg font-medium">Gestion de navettes aéroport</span>
+          <span class="w-9 h-9 service_arrow flex justify-center items-center bg-main-blue rounded-full duration-300">
+            <img class="w-7 h-7" src="../../assets/right_arrow.svg" alt="" />
+          </span>
+        </article>
+        <article
+          class="single_service w-full md:w-[48%] flex items-center gap-5 justify-between px-7 py-5 rounded-2xl bg-white">
+          <span class="text-paragraph-blue text-sm md:text-lg font-medium">Gestion transfert professionnel</span>
+          <span class="w-9 h-9 service_arrow flex justify-center items-center bg-main-blue rounded-full duration-300">
+            <img class="w-7 h-7" src="../../assets/right_arrow.svg" alt="" />
+          </span>
+        </article>
+        <article
+          class="single_service w-full md:w-[48%] flex items-center gap-5 justify-between px-7 py-5 rounded-2xl bg-white">
+          <span class="text-paragraph-blue text-sm md:text-lg font-medium">Gestion de navette gares il de france</span>
+          <span class="w-9 h-9 service_arrow flex justify-center items-center bg-main-blue rounded-full duration-300">
+            <img class="w-7 h-7" src="../../assets/right_arrow.svg" alt="" />
+          </span>
+        </article>
+        <article
+          class="single_service w-full md:w-[48%] flex items-center gap-5 justify-between px-7 py-5 rounded-2xl bg-white">
+          <span class="text-paragraph-blue text-sm md:text-lg font-medium">Gestion des mis à disposition</span>
+          <span class="w-9 h-9 service_arrow flex justify-center items-center bg-main-blue rounded-full duration-300">
+            <img class="w-7 h-7" src="../../assets/right_arrow.svg" alt="" />
+          </span>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- this is the contact section -->
+  <section class="contact pt-12">
+    <div class="container">
+      <h1 class="text-center text-2xl font-bold text-title-blue">Nous Contacter</h1>
+      <div class="content w-full">
+        <div class="form-container py-5 relative mt-14 w-full lg:w-[55%] xl:w-[45%] mx-auto">
+          <!-- this is the form -->
+          <form action="" class="rounded-2xl flex flex-col gap-5 z-30 p-5 bg-white relative">
+            <div class="form-column m flex flex-col gap-3 w-full">
+              <label for="Nom" class="text-paragraph-blue font-semibold">Nom Complet</label>
+              <input id="nom" type="text"
+                class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+                placeholder="Nom" />
+            </div>
+            <div class="form-column flex flex-col gap-3 w-full">
+              <label for="email" class="text-paragraph-blue font-semibold">Email</label>
+              <input id="email" type="email"
+                class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+                placeholder="example@gmail.com" />
+            </div>
+            <div class="form-column flex flex-col gap-3 w-full">
+              <label for="entreprise" class="text-paragraph-blue font-semibold">Societe/Entreprise</label>
+              <input id="entreprise type=" email"
+                class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+                placeholder="VTC / CAB " />
+            </div>
+            <div class="form-column flex flex-col gap-3 w-full">
+              <label for="entreprise" class="text-paragraph-blue font-semibold">Message</label>
+              <textarea
+                class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid resize-none"
+                name="" id="" cols="30" rows="5"></textarea>
+            </div>
+            <!-- this is the bottom section of the form -->
+            <div class="form-column mt-5 flex justify-end md:justify-between items-center">
+              <div class="checkbox-cotainer hidden md:block">
+                <input class="" type="checkbox" name="accepted" id="terms" />
+                <label for="terms" class="text-title-blue font-normal text-sm">
+                  j’accepte les
+                  <a href="/terms" class="underline">Politiques de Confidentialité</a>
+                  de CAB VTC
+                </label>
+              </div>
+              <!-- this is the submittion button -->
+              <button
+                class="rounded-xl main_button duration-300 flex items-center gap-2 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">
+                <span>Envoyer</span>
+                <img src="../../assets/send_icon.svg" alt="" />
+              </button>
+            </div>
+          </form>
+          <!-- those are the contact assets -->
+          <img class="absolute hidden lg:block -left-64 xl:-left-72 top-[20%]" src="../../assets/phone.png" alt="" />
+          <img class="absolute -left-9 -bottom-20 lg:-left-52 lg:bottom-24" src="../../assets/earth.png" alt="" />
+          <img class="absolute hidden lg:block -right-60 xl:-right-80 bottom-8" src="../../assets/letter_container.png"
+            alt="" />
+          <img class="absolute -top-10 -right-16 md:-right-24 z-0" src="../../assets/duration_icon.png" alt="" />
+          <!-- this is the points image -->
+          <img class="absolute -top-10 z-[-1] -left-24 hidden lg:block" src="../../assets/points.png" alt="" />
         </div>
       </div>
-    </section>
-    <!-- this is the text -->
-    <h2 class="text-center my-32 inter tracking-wider text-[#ADBDCC] font-semibold text-2xl italic">“Notre passion, votre satisfaction”</h2>
-    <!-- this is the footer -->
-    <footer class="py-10">
-      <div class="container px-5 py-10 bg-white rounded-2xl flex justify-between gap-10 flex-col md:flex-row">
-        <div class="first-column w-full md:w-[33%] flex flex-col gap-3">
-          <a
-            class="block min-h-fit min-w-fit"
-            href="./home.html"
-          >
-            <img
-              src="../../assets//logo.svg"
-              alt=""
-            />
-          </a>
-          <p class="text-desc-gray inter font-light text-base w-full md:w-2/3">une agence spécialisée dans la location de véhicules haut de gamme.</p>
-        </div>
-        <div class="second-column w-full md:w-[33%] flex flex-col gap-3">
-          <h4 class="text-[#4F5A65] font-semibold">Content</h4>
-          <ul class="flex flex-col gap-2">
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/home/home.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/about/about.html"
-                >À Propos</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/blog/blog.html"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/services/services.html"
-                >Reserver</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/contact/contact.html"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="third-column w-full md:w-[33%] flex flex-col gap-3">
-          <h4 class="text-[#4F5A65] font-semibold">Social</h4>
-          <ul class="flex gap-5">
-            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
-              <a
-                class="min-h-10 min-w-10 block"
-                href=""
-                ><img
-                  src="../../assets/facebook.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
-              <a
-                class="min-h-10 min-w-10 block"
-                href=""
-                ><img
-                  src="../../assets/instagram.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
-              <a
-                class="min-h-10 min-w-10 block"
-                href=""
-                ><img
-                  src="../../assets/twiiter.svg"
-                  alt=""
-              /></a>
-            </li>
-          </ul>
-          <ul class="flex flex-col gap-3 mt-3">
-            <li class="flex">
-              <a
-                class="flex gap-2 items-center"
-                href="mailto:hello@agencycabvtc.com"
-              >
-                <img
-                  src="../../assets/small_message.svg"
-                  alt=""
-                />
-                <span class="text-[#ADBDCC] text-sm">hello@agencycabvtc.com</span>
-              </a>
-            </li>
-            <li class="flex">
-              <a
-                class="flex gap-2 items-center"
-                href="tel:+33 1 81 70 80 65"
-              >
-                <img
-                  src="../../assets/small_phone.svg"
-                  alt=""
-                />
-                <span class="text-[#ADBDCC] text-sm">+33 1 81 70 80 65</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+    </div>
+  </section>
+  <!-- this is the text -->
+  <h2 class="text-center my-32 inter tracking-wider text-[#ADBDCC] font-semibold text-2xl italic">“Notre passion, votre
+    satisfaction”</h2>
+  <!-- this is the footer -->
+  <footer class="py-10">
+    <div class="container px-5 py-10 bg-white rounded-2xl flex justify-between gap-10 flex-col md:flex-row">
+      <div class="first-column w-full md:w-[33%] flex flex-col gap-3">
+        <a class="block min-h-fit min-w-fit" href="./home.html">
+          <img src="../../assets//logo.svg" alt="" />
+        </a>
+        <p class="text-desc-gray inter font-light text-base w-full md:w-2/3">une agence spécialisée dans la location de
+          véhicules haut de gamme.</p>
       </div>
-      <!-- this is the copyright phrase -->
-      <p class="text-center text-[#ADBDCC] text-sm md:text-base text-medium my-10">All Rights Reserved-CAB VTC <span class="year"></span></p>
-    </footer>
-  </body>
-  <!-- this is for the swiper -->
-  <script
-    type="module"
-    src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
-  ></script>
-  <script
-    type="module"
-    src="./services.js"
-  ></script>
+      <div class="second-column w-full md:w-[33%] flex flex-col gap-3">
+        <h4 class="text-[#4F5A65] font-semibold">Content</h4>
+        <ul class="flex flex-col gap-2">
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/home/home.html">Home</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/about/about.html">À Propos</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/blog/blog.html">Blog</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/services/services.html">Reserver</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/contact/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="third-column w-full md:w-[33%] flex flex-col gap-3">
+        <h4 class="text-[#4F5A65] font-semibold">Social</h4>
+        <ul class="flex gap-5">
+          <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+            <a class="min-h-10 min-w-10 block" href=""><img src="../../assets/facebook.svg" alt="" /></a>
+          </li>
+          <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+            <a class="min-h-10 min-w-10 block" href=""><img src="../../assets/instagram.svg" alt="" /></a>
+          </li>
+          <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+            <a class="min-h-10 min-w-10 block" href=""><img src="../../assets/twiiter.svg" alt="" /></a>
+          </li>
+        </ul>
+        <ul class="flex flex-col gap-3 mt-3">
+          <li class="flex">
+            <a class="flex gap-2 items-center" href="mailto:hello@agencycabvtc.com">
+              <img src="../../assets/small_message.svg" alt="" />
+              <span class="text-[#ADBDCC] text-sm">hello@agencycabvtc.com</span>
+            </a>
+          </li>
+          <li class="flex">
+            <a class="flex gap-2 items-center" href="tel:+33 1 81 70 80 65">
+              <img src="../../assets/small_phone.svg" alt="" />
+              <span class="text-[#ADBDCC] text-sm">+33 1 81 70 80 65</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- this is the copyright phrase -->
+    <p class="text-center text-[#ADBDCC] text-sm md:text-base text-medium my-10">All Rights Reserved-CAB VTC <span
+        class="year"></span></p>
+  </footer>
+</body>
+<!-- this is for the swiper -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script type="module" src="./services.js"></script>
+
 </html>
