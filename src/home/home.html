@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/dist/output.css"
+    />
+    <!-- this link is for the swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-main-white overflow-x-hidden">
+    <!-- this is the header -->
+      <header class=" py-10 ">
+      <div class="container relative mt-12 md:px-8 rounded-2xl h-20 6  flex items-center md:bg-white ">
+        <div class="items h-full w-full flex justify-between">
+          <!-- this section is for the logo and the links -->
+          <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
+            <a class=" block min-h-fit min-w-fit "  href="./home.html">
+               <img
+                 src="../../assets//logo.svg"
+                 alt=""
+               />
+            </a>
+            <!-- those are the links -->
+            <ul class="side-bar duration-700 z-40 bg-white w-screen  rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
+              <li class="text-main-blue hover:text-main-blue duration-300 selected flex justify-center items-center min-h-full">
+                <a href="../home/home.html">Accueil</a>
+              </li>
+              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+                <a href="../services/services.html">Services</a>
+              </li>
+              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+                <a href="../about/about.html">À propos</a>
+              </li>
+              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+                <a href="../blog/blog.html">Blog</a>
+              </li>
+              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+                <a href="../contact/contact.html">Contacts</a>
+              </li>
+              <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
+                <a href="../login/login.html"  class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue">connection</a>
+              </li>
+              <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
+                <button class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</button>
+              </li>
+            </ul>
+          </div>
+          <!-- this section is for the buttons -->
+          <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
+           <a
+              href="../login/login.html"
+              class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue"
+              >connection</a
+            >
+            <a href="../contact/contact.html"  class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</a>
+          </div>
+          <!-- this is- the side  bar container -->
+          <button class="sideBar-btn block lg:hidden">
+            <img
+              src="../../assets//side-bar-btn.png"
+              alt=""
+            />
+          </button>
+        </div>
+       </div>
+
+      </header>
+      <!-- this is the hero section -->
+      <section class="hero mt-5 md:mt-20">
+        <div class="container">
+
+        <!-- this si the discount container -->
+        <div class="discount w-fit flex justify-center items-center px-4 py-1 text-main-blue bg-sec-blue rounded-2xl">30% reduction pour premier ride</div>
+        <!-- this is the main content of the hero section -->
+        <div class="content flex justify-between mt-5">
+          <!-- this is the title  -->
+          <div class="header  relative z-10  ">
+            <h1 class="text-[36px] relative    leading-[50px] md:leading-[70px] md:text-[48px] font-bold text-main-gray">
+              Le transport privé <br />
+              <span class="text-main-blue">Haut De Gamme</span> <br />
+              à portée de tous.
+            </h1>
+            <!-- this paragraph is just for the small devices -->
+            <p class=" text-desc-gray relative  block md:hidden text-lg  font-semibold  mt-5 max-w-[80%]  " >Fill the next Form And Pick your Next Ride</p>
+        
+          </div>
+          <!-- this is the images section -->
+            <!-- this image is for the big screen -->
+           <img
+             class=" absolute right-0 top-44 hidden lg:block  z-5  "
+             src="/assets/heroImage.png"
+             alt=""
+           />
+            <!-- this image is for the small screens -->
+            <img  class=" absolute top-[180px] right-[-5%] block sm:hidden  z-0"  src="../../assets/hero_home_small.png" alt="">
+          
+        </div>
+        <!-- form section -->
+        <form
+          class=" px-2   md:p-5 bg-white rounded-2xl w-full lg:w-[75%] mt-14  relative z-50"
+          action=""
+        >
+           <div class="firs-form-row w-full flex justify-between md:gap-4 items-center flex-col md:flex-row">
+            <div class="form-column w-full flex flex-col gap-3 md:basis-5/12">
+              <label
+                for="aller"
+                class="text-paragraph-blue font-semibold"
+                >Aller de</label
+              >
+              <div class="input-container w-10/12 md:w-full relative">
+                <input
+                  id="aller"
+                  type="text"
+                  class="rounded-2xl w-full outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
+                  placeholder="Adresse, ville ou lieu"
+                />
+                <!-- this is the location icon -->
+                <img
+                  src="/assets/location_icon.svg"
+                  alt=""
+                  class="block md:hidden absolute right-3 top-1/2 -translate-y-1/2"
+                />
+              </div>
+            </div>
+            <div class="button-container flex w-full md:w-fit justify-end md:justify-center md:items-center  ">
+              <button class="mt-8 direction_svg rotate-90 md:rotate-0">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.0602 12.075C16.0602 12.2407 16.1945 12.375 16.3602 12.375L29.2715 12.375C29.4372 12.375 29.5715 12.5093 29.5715 12.675L29.5715 14.325C29.5715 14.4907 29.4372 14.625 29.2715 14.625L16.3602 14.625C16.1945 14.625 16.0602 14.7593 16.0602 14.925L16.0602 17.2744C16.0602 17.5419 15.7367 17.6757 15.5478 17.4863L11.7828 13.7119C11.666 13.5948 11.666 13.4052 11.7828 13.2881L15.5478 9.51368C15.7367 9.32433 16.0602 9.45809 16.0602 9.72555L16.0602 12.075Z"
+                    fill="#737F89"
+                  />
+                  <path
+                    d="M19.9398 21.075C19.9398 21.2407 19.8055 21.375 19.6398 21.375L6.72859 21.375C6.5629 21.375 6.42859 21.5093 6.42859 21.675V23.325C6.42859 23.4907 6.5629 23.625 6.72859 23.625H19.6398C19.8055 23.625 19.9398 23.7593 19.9398 23.925V26.2745C19.9398 26.5419 20.2634 26.6757 20.4522 26.4863L24.2173 22.7119C24.3341 22.5948 24.3341 22.4052 24.2173 22.2881L20.4522 18.5137C20.2634 18.3243 19.9398 18.4581 19.9398 18.7255V21.075Z"
+                    fill="#737F89"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="form-column w-full flex flex-col gap-4 basis-[45%]">
+              <label
+                for="vers"
+                class="text-paragraph-blue font-semibold"
+                >Vers</label
+              >
+              <div class="input-container w-10/12 md:w-full relative">
+                <input
+                  id="vers"
+                  type="text"
+                  class="rounded-2xl w-full text-paragraph-blue outline-none px-5 py-3 border-2 border-sec-gray border-solid focus:border-main-blue"
+                  placeholder="Adresse, ville ou lieu"
+                />
+                <img
+                  src="/assets/location_icon.svg"
+                  class="block md:hidden absolute right-3 top-1/2 -translate-y-1/2"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- this is the second form row -->
+          <div class="second-form-row w-full mt-5 flex md:items-end flex-col gap-5 md:flex-row">
+            <div class="inputs-container w-full md:w-9/12 flex gap-2 md:gap-5">
+              <div class="form-column w-full flex flex-col gap-4 basis-6/12">
+                <label
+                  for="date"
+                  class="text-paragraph-blue font-semibold"
+                  >Date</label
+                >
+                <input
+                  id="date"
+                  type="date"
+                  class="rounded-2xl focus:border-main-blue text-paragraph-blue outline-none px-4 py-3 border-2 border-sec-gray border-solid"
+                  placeholder="12-12-2023"
+                />
+              </div>
+              <div class="form-column w-full flex flex-col gap-4 basis-[30%]">
+                <label
+                  for="time"
+                  class="text-paragraph-blue font-semibold"
+                  >Horraire</label
+                >
+                <input
+                  id="time"
+                  type="time"
+                  class="rounded-2xl focus:border-main-blue text-paragraph-blue outline-none px-4 py-3 border-2 border-sec-gray border-solid"
+                  placeholder="Adresse, ville ou lieu"
+                />
+              </div>
+            </div>
+            <button class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-4 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue flex-1">Continuer</button>
+          </div>
+        </form>
+        </div>
+
+      </section>
+      <!-- testimonial  swiper ( for big screens)  -->
+      <section class=" my-28  ">
+       <div class="container swiper testimonial-big-swiper testimonial-swiper relative ">
+
+        <div class="swiper-wrapper testimonial-swiper-wrapper ">      
+           <div
+            class="swiper-slide testimonial-swiper-slide min-w-full flex flex-row justify-between    "
+          >
+            <article class="single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets/testimonials-1.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> James Smith </span>
+                  <span class="email text-xs text-desc-gray font-semibold"> CEO of Nexus Dynamics Ltd. </span>
+                </div>
+              </div>
+              <p class="opinion  text-paragraph-blue text-lg">Impressive results! I've never seen my yard look so beautiful. Thank you.</p>
+              <span class="evaluation  w-full   flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+            </article>
+            <article class="single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets//testimonials-2.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> Sarah Johnson </span>
+                  <span class="email text-xs text-desc-gray font-semibold">VP of Bright Solutions Inc. </span>
+                </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-lg">Incredible experience! The staff were friendly and knowledgeable. A true pleasure to work with.</p>
+             <span class="evaluation w-full  flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+            </article>
+            <article class="single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets/testimonials-3.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> Karen Lee </span>
+                  <span class="email text-xs text-desc-gray font-semibold">Intern at Global Innovations Co. </span>
+                </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-lg">
+                Outstanding quality! The craftsmanship is top-notch.</p>
+                <span class="evaluation  w-full   flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+              </p>
+            </article>
+          </div>
+          <div
+            class=" swiper-slide testimonial-swiper-slide min-w-full flex flex-row justify-between    "
+          >
+            <article class="single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets/testimonials-1.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> James Smith </span>
+                  <span class="email text-xs text-desc-gray font-semibold"> CEO of Nexus Dynamics Ltd. </span>
+                </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-lg">Impressive results! I've never seen my yard look so beautiful. Thank you.</p>
+              <span class="evaluation  w-full   flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+            </article>
+            <article class="single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets//testimonials-2.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> Sarah Johnson </span>
+                  <span class="email text-xs text-desc-gray font-semibold">VP of Bright Solutions Inc. </span>
+                </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-lg">Incredible experience! The staff were friendly and knowledgeable. A true pleasure to work with.</p>
+             <span class="evaluation w-full  flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+            </article>
+            <article class="single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets/testimonials-3.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> Karen Lee </span>
+                  <span class="email text-xs text-desc-gray font-semibold">Intern at Global Innovations Co. </span>
+                </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-lg">
+                Outstanding quality! The craftsmanship is top-notch.</p>
+                <span class="evaluation  w-full   flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+              </p>
+            </article>
+          </div>
+          <div
+            class=" swiper-slide testimonial-swiper-slide     "
+          >
+            <article class="single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets/testimonials-1.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> James Smith </span>
+                  <span class="email text-xs text-desc-gray font-semibold"> CEO of Nexus Dynamics Ltd. </span>
+                </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-lg">Impressive results! I've never seen my yard look so beautiful. Thank you.</p>
+              <span class="evaluation  w-full   flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+            </article>
+            <article class="single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets//testimonials-2.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> Sarah Johnson </span>
+                  <span class="email text-xs text-desc-gray font-semibold">VP of Bright Solutions Inc. </span>
+                </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-lg">Incredible experience! The staff were friendly and knowledgeable. A true pleasure to work with.</p>
+             <span class="evaluation w-full  flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+            </article>
+            <article class="single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets/testimonials-3.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> Karen Lee </span>
+                  <span class="email text-xs text-desc-gray font-semibold">Intern at Global Innovations Co. </span>
+                </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-lg">
+                Outstanding quality! The craftsmanship is top-notch.</p>
+                <span class="evaluation  w-full   flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+              </p>
+            </article>
+          </div>
+        </div>
+        <!-- this is for the pagination -->
+        <div class="swiper-pagination  testimonial-swiper-pagintaion  ">
+        </div>
+        <!-- this is the quote image -->
+        <img src="../../assets//top_quote.png" class=" absolute top-0 left-4 "  alt="">
+        <img src="../../assets//bottom_quote.png" class="absolute bottom-0 right-4  "  alt="">
+      </div>
+      </section>
+      <!-- testimonial swiper (for small screens) -->
+      <section class=" my-10  ">
+       <div class="container swiper testimonial-swiper testimonial-small-swiper relative ">
+        <div class="swiper-wrapper">
+          
+             <article class=" swiper-slide single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets/testimonials-1.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> James Smith </span>
+                  <span class="email text-xs text-desc-gray font-semibold"> CEO of Nexus Dynamics Ltd. </span>
+                </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-lg">Impressive results! I've never seen my yard look so beautiful. Thank you.</p>
+              <span class="evaluation  w-full   flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+            </article>
+               <article class=" swiper-slide single-item w-full md:w-[32%] rounded-2xl p-5 bg-white flex flex-col gap-5">
+              <div class="user-info flex item-center gap-5">
+                <img
+                  src="../../assets/testimonials-1.png"
+                  alt=""
+                  class="rounded-[50%]"
+                />
+                <div class="info flex flex-col justify-center gap-1">
+                  <span class="name text-paragraph-blue font-semibold"> James Smith </span>
+                  <span class="email text-xs text-desc-gray font-semibold"> CEO of Nexus Dynamics Ltd. </span>
+                </div>
+              </div>
+              <p class="opinion text-paragraph-blue text-lg">Impressive results! I've never seen my yard look so beautiful. Thank you.</p>
+              <span class="evaluation  w-full   flex-1 flex flex-col items-end justify-end ">
+                <img
+                  src="../../assets/stars.png"
+                  alt=""
+                />
+              </span>
+            </article>
+             
+        </div>
+        <!-- this is the quote image -->
+        <img src="../../assets//top_quote.png" class=" absolute top-0 left-4 h-20 w-20   "  alt="">
+        <img src="../../assets//bottom_quote.png" class="absolute bottom-0 right-4  w-20 h-20  "  alt="">
+       </div>
+      
+      </section>
+
+    <!-- quit container -->
+    <!-- this is the cars carousel -->
+    
+      <section class="py-12 w-full">
+      <h1 class="text-center text-2xl font-bold text-title-blue">Private Vehicules</h1>
+
+      <div class="images-container mt-12 min-w-full relative">
+        <img
+          attr="left_car"
+          class="absolute car duration-1000"
+          src="../../assets/car2.png"
+          alt=""
+        />
+        <img
+          attr="center_car"
+          class="absolute car duration-1000"
+          src="../../assets/car1.png"
+          alt=""
+        />
+        <img
+          attr="right_car"
+          class="absolute car duration-700"
+          src="../../assets/car3.png"
+          alt=""
+        />
+        <!-- this is for the left blur -->
+        <div class="absolute left-0 w-12 h-24 md:min-h-[200px] md:min-w-48 blur-md bg-white opacity-40"></div>
+        <div class="absolute right-0 w-12 h-24 md:min-h-[200px] md:min-w-48 blur-md bg-white opacity-40"></div>
+      </div>
+      </section>
+
+    <!-- about agency section -->
+     <section class="about mt-96 py-4  md:py-10 h-[520px] md:h-[450px] w-full relative">
+      <!-- this is the image -->
+      <img class=" about_img   min-w-[200%] md:min-w-[120%] h-[520px] md:h-[500px] max-h-full absolute top-0 right-0     "  src="../../assets/about-bg.jpg" alt="">
+      <div class="container relative z-20 ">
+        <div class="text-container flex flex-col w-full lg:w-[65%] xl:w-[50%] gap-5 py-12 px-5 md:px-10 rounded-2xl bg-white">
+          <h1 class="text-paragraph-blue text-lg font-bold">Qui est agency Cab VTC</h1>
+          <p class="text-desc-gray">AgencyCab Vtc, une agence spécialisée dans la location de véhicules haut de gamme avec chauffeur privé pour vos déplacements professionnels ainsi que pour ceux de vos collaborateurs et clients, ainsi que pour l'accompagnement. Nous mettons à votre disposition une gamme de véhicules haut de gamme pour répondre à tous vos besoins de transport professionnel. Nos chauffeurs professionnels et expérimentés vous garantissent un service de qualité supérieure et un trajet confortable et sûr. Chez AgencyCab Vtc, nous sommes engagés à vous offrir un service personnalisé et à répondre à toutes vos exigences en matière de transport professionnel</p>
+        </div>
+      </div>
+     </section>
+    <!-- back to container -->
+ 
+      <!-- solutions section -->
+
+     <section class="solutions min-w-fit min-h-fit py-40 mt-10 sm:mt-0 ">
+      <div class="container">
+        <h1 class="text-center text-2xl relative z-50 font-bold text-title-blue">solutions</h1>
+        <div class="solutions-container mt-12 flex flex-col gap-12 relative ">
+          <div class="solution-row relative z-30  flex gap-5 justify-between flex-col lg:flex-row">
+            <div class="single-solution w-full lg:w-[50%] flex gap-5 items-start md:items-center">
+              <img
+                class="w-36 sm:w-48  "
+                src="../../assets//solution-1.png"
+
+                alt=""
+              />
+              <p class="text-paragraph-blue font-semibold">Navettes aéroport personnalisées avec chauffeur privé</p>
+            </div>
+            <div class="single-solution w-full lg:w-[50%] flex gap-5 items-start md:items-center">
+              <img
+                class="w-36 sm:w-48"
+                src="../../assets/solution-2.png"
+                alt=""
+              />
+              <p class="text-paragraph-blue font-semibold">Navettes gares persiennes avec chauffeur privé</p>
+            </div>
+          </div>
+          <div class="solution-row flex justify-between flex-col gap-5 lg:flex-row">
+            <div class="single-solution w-full lg:w-[50%] lg:ml-12 flex gap-5 items-start md:items-center">
+              <img
+                class="w-36 sm:w-48"
+                src="../../assets//solution-3.png"
+                alt=""
+              />
+              <p class="text-paragraph-blue font-semibold">Mis à disposions de véhicule avec chauffeur privé</p>
+            </div>
+            <div class="single-solution w-full lg:w-[50%] lg:ml-12 flex gap-5 items-start md:items-center">
+              <img
+                class="w-36 sm:w-48"
+                src="../../assets/solution-4.png"
+                alt=""
+              />
+              <p class="text-paragraph-blue font-semibold">Solution de location de véhicules haut de gamme avec chauffeur privé pour vos déplacements professionnels</p>
+            </div>
+          </div>
+          <div class="solution-row flex justify-between flex-col gap-5 lg:flex-row">
+            <div class="single-solution w-full lg:w-[50%] lg:ml-24 flex gap-5 items-start md:items-center">
+              <img
+                class="w-36 sm:w-48"
+                src="../../assets//solution-5.png"
+                alt=""
+              />
+              <p class="text-paragraph-blue font-semibold">Location véhicule avec chauffeur privé pour déplacement professionnelle</p>
+            </div>
+            <div class="single-solution w-full lg:w-[50%] lg:ml-24 flex gap-5 items-start md:items-center">
+              <img
+                class="w-36 sm:w-48"
+                src="../../assets/solution-6.png"
+                alt=""
+              />
+              <p class="text-paragraph-blue font-semibold">Solution de location de véhicule haute de gamme pour des transfert long trajet</p>
+            </div>
+          </div>
+          <!-- this is the points image -->
+          <img src="../../assets/points.png" class=" absolute -top-16 -left-16 z-10 "  alt="">
+        </div>
+      </div>
+      
+     </section>
+      <!-- offers sections -->
+     <section class="offres py-24">
+      <div class="container">
+
+        <div class="offers-container w-full flex flex-wrap gap-5">
+          <div class="offres-row w-full gap-5 flex flex-col lg:flex-row">
+            <div class="first_single_offer p-8 flex flex-col gap-5 bg-white rounded-2xl w-full lg:w-[50%]">
+              <div class="head flex gap-2 items-center">
+                <img
+                  src="../../assets/offre_1.png"
+                  class="icon duration-300"
+                  alt=""
+                />
+                <h1 class="text-2xl text-paragraph-blue font-semibold">Réservation d’avance 40 min d’avance</h1>
+              </div>
+              <p class="text-desc-gray font-[500]">effectuer une réservation ou plusieurs, il vous suffit de remplir le formulaire avec les informations demandées. Ensuite, vous pouvez choisir le véhicule souhaité depuis votre espace client ou nous contacter directement par téléphone au numéro de votre chargé de compte. Une fois la réservation effectuée, vous recevrez une confirmation par mail ou par SMS.</p>
+            </div>
+            <div class="second_single_offer flex p-8 flex-col gap-5 bg-white rounded-2xl w-full lg:w-[50%]">
+              <div class="head flex gap-2 items-center">
+                <img
+                  class="icon duration-300"
+                  src="../../assets/offre_2.png"
+                  alt=""
+                />
+                <h1 class="text-2xl text-paragraph-blue font-semibold">Gestion la demande</h1>
+              </div>
+              <p class="text-desc-gray font-[500]">Une fois votre réservation effectuée, nous vous enverrons un bon de commande contenant les informations relatives au véhicule et au chauffeur assigné à cette mission, ainsi que la préparation de pancartes personnalisées si nécessaire.</p>
+            </div>
+          </div>
+          <div class="offres-row w-full gap-5 flex flex-col lg:flex-row">
+            <div class="third_single_offer p-8 flex flex-col gap-5 bg-white rounded-2xl w-full lg:w-[50%]">
+              <div class="head flex gap-2 items-center">
+                <img
+                 class="icon duration-300"
+                  src="../../assets/offre_3.png"
+                  alt=""
+                />
+                <h1 class="text-2xl text-paragraph-blue font-semibold">Suivie du transfert</h1>
+              </div>
+              <p class="text-desc-gray font-[500]">En cas de réservation pour une prise en charge à l'aéroport ou à la gare, nous suivons le train ou le vol afin de nous assurer qu'il n'y ait pas de temps d'attente supplémentaire pour lequel vous ne seriez plus responsable.</p>
+            </div>
+            <div class="fourth_single_offer flex p-8 flex-col gap-5 bg-white rounded-2xl w-full lg:w-[50%]">
+              <div class="head flex gap-2 items-center">
+                <img
+                  class=" icon duration-300 "
+                  src="../../assets/offre_4.png"
+                  alt=""
+                />
+                <h1 class="text-2xl text-paragraph-blue font-semibold">Gestion la demande</h1>
+              </div>
+              <p class="text-desc-gray font-[500]">Une fois la mission effectuée, si vous avez des remarques ou des demandes concernant la mission, vous pouvez nous contacter depuis votre espace client et laisser un commentaire sur la réservation correspondante</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+       <!-- contact section -->
+     <section class="contact pt-12">
+     <div class="container">
+      <h1 class="text-center text-2xl font-bold text-title-blue">Nous Contacter</h1>
+        <div class="content w-full ">
+          <div class="form-container py-5 relative mt-14 w-full lg:w-[55%] xl:w-[45%] mx-auto">
+            <!-- this is the form -->
+            <form
+              action=""
+              class="rounded-2xl flex flex-col  gap-5 z-30   p-5  bg-white relative"
+            >
+              <div class="form-column m flex flex-col gap-3 w-full">
+                <label
+                  for="Nom"
+                  class="text-paragraph-blue font-semibold"
+                  >Nom Complet</label
+                >
+                <input
+                  id="nom"
+                  type="text"
+                  class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+                  placeholder="Nom"
+                />
+              </div>
+              <div class="form-column flex flex-col gap-3 w-full">
+                <label
+                  for="email"
+                  class="text-paragraph-blue font-semibold"
+                  >Email</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="form-column flex flex-col gap-3 w-full">
+                <label
+                  for="entreprise"
+                  class="text-paragraph-blue font-semibold"
+                  >Societe/Entreprise</label
+                >
+                <input id="entreprise type="email" class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid" placeholder="VTC / CAB " />
+              </div>
+              <div class="form-column flex flex-col gap-3 w-full">
+                <label
+                  for="entreprise"
+                  class="text-paragraph-blue font-semibold "
+                  >Message</label
+                >
+                <textarea
+                  class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid resize-none"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+              <!-- this is the bottom section of the form -->
+              <div class="form-column  mt-5 flex justify-end md:justify-between items-center ">
+                <div class="checkbox-cotainer hidden md:block ">
+                  <input class="" type="checkbox" name="accepted" id="terms">
+                  <label for="terms" class=" text-title-blue   font-normal   text-sm   " >
+                    j’accepte les <a href="/terms" class=" underline " >Politiques de Confidentialité</a> de CAB VTC
+                  </label>
+                </div>
+                <!-- this is the submittion button -->
+              <button class="rounded-xl main_button duration-300 flex items-center gap-2 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">
+                <span>Envoyer</span>
+                <img src="../../assets/send_icon.svg" alt="">
+              </button>
+
+              </div>
+            </form>
+                <!-- those are the contact assets -->
+                <img
+                 class="absolute hidden lg:block -left-64 xl:-left-72 top-[20%]"
+                 src="../../assets/phone.png"
+                 alt=""
+                />
+                <img
+                  class="absolute   -left-9 -bottom-20 lg:-left-52 lg:bottom-24"
+                  src="../../assets/earth.png"
+                  alt=""
+                />
+                <img
+                 class="absolute hidden lg:block -right-60  xl:-right-80 bottom-8"
+                 src="../../assets/letter_container.png"
+                 alt=""
+                />
+                <img
+                 class="absolute  -top-10 -right-16 md:-right-24 z-0 "
+                 src="../../assets/duration_icon.png" alt="">
+            <!-- this is the points image -->
+            <img
+              class="absolute -top-10 z-[-1] -left-24 hidden lg:block"
+              src="../../assets/points.png"
+              alt=""
+            />
+          </div>
+       
+        </div>
+     </div>
+     </section>
+    <!-- this is the text -->
+    <h2 class=" text-center my-32 inter tracking-wider text-[#ADBDCC] font-semibold text-2xl italic   " >“Notre passion, votre satisfaction”</h2>
+    <!-- this is the footer -->
+     <footer class="py-10">
+      <div class="container px-5 py-10 bg-white rounded-2xl flex justify-between gap-10 flex-col md:flex-row">
+        <div class="first-column w-full md:w-[33%] flex flex-col gap-3">
+          <a
+            class="block min-h-fit min-w-fit"
+            href="./home.html"
+          >
+            <img
+              src="../../assets//logo.svg"
+              alt=""
+            />
+          </a>
+          <p class="text-desc-gray inter font-light text-base w-full md:w-2/3">une agence spécialisée dans la location de véhicules haut de gamme.</p>
+        </div>
+        <div class="second-column w-full md:w-[33%] flex flex-col gap-3">
+          <h4 class="text-[#4F5A65] font-semibold">Content</h4>
+          <ul class="flex flex-col gap-2">
+            <li>
+              <a
+                class="text-[#ADBDCC] hover:text-main-blue duration-300"
+                href="/src/home/home.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#ADBDCC] hover:text-main-blue duration-300"
+                href="/src/about/about.html"
+                >À Propos</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#ADBDCC] hover:text-main-blue duration-300"
+                href="/src/blog/blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#ADBDCC] hover:text-main-blue duration-300"
+                href="/src/services/services.html"
+                >Reserver</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#ADBDCC] hover:text-main-blue duration-300"
+                href="/src/contact/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="third-column w-full md:w-[33%] flex flex-col gap-3">
+          <h4 class="text-[#4F5A65] font-semibold">Social</h4>
+          <ul class="flex gap-5">
+            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+              <a
+                class="min-h-10 min-w-10 block"
+                href=""
+                ><img
+                  src="../../assets/facebook.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+              <a
+                class="min-h-10 min-w-10 block"
+                href=""
+                ><img
+                  src="../../assets/instagram.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+              <a
+                class="min-h-10 min-w-10 block"
+                href=""
+                ><img
+                  src="../../assets/twiiter.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-3 mt-3">
+            <li class="flex">
+              <a
+                class="flex gap-2 items-center"
+                href="mailto:hello@agencycabvtc.com"
+              >
+                <img
+                  src="../../assets/small_message.svg"
+                  alt=""
+                />
+                <span class="text-[#ADBDCC] text-sm">hello@agencycabvtc.com</span>
+              </a>
+            </li>
+            <li class="flex">
+              <a
+                class="flex gap-2 items-center"
+                href="tel:+33 1 81 70 80 65"
+              >
+                <img
+                  src="../../assets/small_phone.svg"
+                  alt=""
+                />
+                <span class="text-[#ADBDCC] text-sm">+33 1 81 70 80 65</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- this is the copyright phrase -->
+      <p class="text-center text-[#ADBDCC] text-sm md:text-base text-medium my-10">All Rights Reserved-CAB VTC <span class="year"></span></p>
+    </footer>
+  </body>
+  <!-- this is for the swiper -->
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+  ></script>
+  <!-- this is the js file -->
+  <script
+    type="module"
+    src="./home.js"
+  ></script>
+</html>

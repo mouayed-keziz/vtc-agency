@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="/dist/output.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-main-white overflow-x-hidden">
+    <header class="py-10 block md:hidden">
+      <div class="container relative mt-12 md:px-8 rounded-2xl h-20 6 flex items-center md:bg-white">
+        <div class="items h-full w-full flex justify-between">
+          <!-- this section is for the logo and the links -->
+          <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
+            <a
+              class="block min-h-fit min-w-fit"
+              href="./home.html"
+            >
+              <img
+                src="../../assets//logo.svg"
+                alt=""
+              />
+            </a>
+            <!-- those are the links -->
+            <ul class="side-bar duration-700 z-40 bg-white w-screen rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
+              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+                <a href="../home/home.html">Accueil</a>
+              </li>
+              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+                <a href="../services/services.html">Services</a>
+              </li>
+              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+                <a href="../about/about.html">À propos</a>
+              </li>
+              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+                <a href="../blog/blog.html">Blog</a>
+              </li>
+              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+                <a href="../contact/contact.html">Contacts</a>
+              </li>
+              <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
+                <a
+                  href="../login/login.html"
+                  class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue"
+                  >connection</a
+                >
+              </li>
+              <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
+                <button class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</button>
+              </li>
+            </ul>
+          </div>
+          <!-- this section is for the buttons -->
+          <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
+            <a
+              href="../login/login.html"
+              class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue"
+              >connection</a
+            >
+            <a
+              href="../contact/contact.html"
+              class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue"
+              >Contacter</a
+            >
+          </div>
+          <!-- this is- the side  bar container -->
+          <button class="sideBar-btn block lg:hidden">
+            <img
+              src="../../assets//side-bar-btn.png"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="pb-10 md:py-10">
+      <div class="container relative flex justify-center items-center">
+        <!-- this is the top section for the buttons -->
+        <div class="content w-full relative md:w-2/3 lg:w-5/12">
+          <!-- this is the top container for buttons -->
+          <div class="btns-container flex justify-between items-center">
+            <button class="home-button">
+              <a
+                class="flex items-center gap-2"
+                href="../home/home.html"
+              >
+                <img
+                  src="/assets/left_arrow.svg"
+                  alt=""
+                />
+                <span class="text-desc-gray font-medium text-sm"> Home </span>
+              </a>
+            </button>
+            <!-- this is the logo -->
+            <button class="hidden md:block">
+              <a
+                class="block min-w-12 min-h-12"
+                href="../home/home.html"
+              >
+                <img
+                  src="/assets/logo.svg"
+                  alt=""
+                />
+              </a>
+            </button>
+          </div>
+          <!-- this is the form -->
+          <div class="form-container h-fit relative w-full">
+            <form
+              action=""
+              class="bg-white relative z-30 rounded-2xl p-5 md:p-10 mt-10 flex flex-col gap-8"
+            >
+              <!-- this is the form header -->
+              <div class="form-header flex flex-col gap-3">
+                <h2 class="text-title-blue font-semibold text-xl">Creé Votre CAB VTC Compte</h2>
+                <p class="text-desc-gray text-sm">Describe your self clearly so that there are no mistakes.</p>
+              </div>
+              <!-- those are the form inputs -->
+              <div class="form-inputs flex flex-col gap-3">
+                <!-- this is the company form input -->
+                <div class="form-row w-full flex justify-between gap-5 items-center">
+                  <div class="first-name-input flex flex-col gap-3 flex-1 max-w-1/2">
+                    <label
+                      for="first-name"
+                      class="text-paragraph-blue font-semibold text-sm w-fit"
+                      >Nom
+                    </label>
+                    <div class="input-container relative w-full">
+                      <input
+                        id="first-name"
+                        type="text"
+                        class="rounded-xl w-full focus:border-main-blue outline-none text-paragraph-blue px-5 py-3 border-2 border-sec-gray border-solid"
+                      />
+                    </div>
+                  </div>
+                  <div class="last-name-input flex flex-col gap-3 flex-1 max-w-1/2">
+                    <label
+                      for="last-name"
+                      class="text-paragraph-blue font-semibold text-sm w-fit"
+                      >Prénom
+                    </label>
+                    <div class="input-container relative w-full">
+                      <input
+                        id="last-name"
+                        type="text"
+                        class="rounded-xl w-full focus:border-main-blue outline-none text-paragraph-blue px-5 py-3 border-2 border-sec-gray border-solid"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- this is the company form input -->
+                <div class="form-row m flex flex-col gap-3 w-full">
+                  <label
+                    for="company"
+                    class="text-paragraph-blue font-semibold text-sm w-fit"
+                    >Nom D’entreprise <span class="text-sm text-[#ABB4BE] font-normal">(optionelle)</span>
+                  </label>
+                  <div class="input-container relative w-full">
+                    <input
+                      id="company"
+                      type="text"
+                      class="rounded-xl w-full focus:border-main-blue outline-none text-paragraph-blue px-5 py-3 border-2 border-sec-gray border-solid"
+                    />
+                  </div>
+                </div>
+                <!-- this is the email form input -->
+                <div class="form-row m flex flex-col gap-3 w-full">
+                  <label
+                    for="email"
+                    class="text-paragraph-blue font-semibold text-sm w-fit"
+                    >Email</label
+                  >
+                  <div class="input-container relative w-full">
+                    <input
+                      id="email"
+                      type="email"
+                      class="rounded-xl w-full focus:border-main-blue outline-none text-paragraph-blue px-5 py-3 border-2 border-sec-gray border-solid"
+                    />
+                  </div>
+                </div>
+                <!-- this is the password form input -->
+                <div class="form-row m flex flex-col gap-3 w-full">
+                  <label
+                    for="password"
+                    class="text-paragraph-blue font-semibold text-sm w-fit"
+                    >Mot De Pass</label
+                  >
+                  <div class="input-container relative w-full">
+                    <input
+                      id="password"
+                      type="password"
+                      class="new_password_input rounded-xl w-full focus:border-main-blue outline-none text-paragraph-blue px-5 py-3 border-2 border-sec-gray border-solid"
+                    />
+                    <button
+                      type="button"
+                      class="new_password_button"
+                    >
+                      <img
+                        class="absolute right-4 top-1/2 -translate-y-1/2"
+                        src="/assets/password_visibility_icon.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+                <!-- this is teh remember me and forgot password buttons -->
+                <div class="form-row flex justify-between my-3 items-center">
+                  <div class="accept_terms">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id="remember"
+                    />
+                    <label
+                      for="remember"
+                      class="text-[#4F5A65] text-xs md:text-sm"
+                      >I agree on the terms of service</label
+                    >
+                  </div>
+                </div>
+                <!-- this is the submission button -->
+                <button
+                  type="submit"
+                  class="w-full main_button duration-300 bg-main-blue rounded-2xl p-4 text-main-white font-semibold"
+                >
+                  Sign Up
+                </button>
+                <!-- this is the bottom section of the form -->
+                <div class="bottom-section mt-3 w-full flex flex-col items-center gap-3">
+                  <!-- this is the or separator -->
+                  <div class="separator w-full flex gap-2 justify-between items-center">
+                    <span class="pt-[0.8px] block rounded-sm flex-1 bg-[#ABB4BE]"></span>
+                    <span class="or_separator block text-[#ABB4BE]">or</span>
+                    <span class="pt-[0.8px] block rounded-sm flex-1 bg-[#ABB4BE]"></span>
+                  </div>
+                  <!-- this is the facebook and google buttons container -->
+                  <div class="facebook_google w-full flex justify-between items-center gap-5 flex-col md:flex-row">
+                    <button class="google flex items-center justify-center gap-3 p-4 border-solid border-2 border-sec-gray rounded-xl w-full md:flex-1">
+                      <img
+                        src="/assets/gogle_icon.svg"
+                        alt=""
+                      />
+                      <span class="text-[#455B73] font-medium text-sm">Google</span>
+                    </button>
+                    <button class="google flex items-center justify-center gap-3 p-4 border-solid border-2 border-sec-gray rounded-xl w-full md:flex-1">
+                      <img
+                        src="/assets/login_facebook_icon.svg"
+                        alt=""
+                      />
+                      <span class="text-[#455B73] font-medium text-sm">Facebook</span>
+                    </button>
+                  </div>
+                  <!-- register suggestion button -->
+                  <p class="text-desc-gray font-medium text-sm mt-5">
+                    Already Have An Account?
+                    <a
+                      href="../login/login.html"
+                      class="font-semibold text-main-blue mx-2"
+                      >Sign In
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </form>
+            <!-- this is the computer asset -->
+            <img
+              src="/assets/laptop_login.png"
+              alt=""
+              class="absolute bottom-4 left-[-140px] z-10"
+            />
+          </div>
+          <!-- those are the links below the form -->
+          <ul class="links flex items-center gap-5 mt-10">
+            <li>
+              <a
+                class="text-[#ADBDCC] text-sm font-medium"
+                href="../home/home.html"
+                >© CABVTC</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#ADBDCC] text-sm font-medium"
+                href="../contact/contact.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#ADBDCC] text-sm font-medium"
+                href=""
+                >Privacy & Terms</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- those are some assets -->
+        <img
+          src="/assets/key_login.png"
+          alt=""
+          class="absolute left-[-5%] top-36 hidden lg:block"
+        />
+        <img
+          src="/assets/user_login.png"
+          alt=""
+          class="absolute top-1/2 -translate-y-1/2 right-0 hidden lg:block"
+        />
+      </div>
+    </main>
+  </body>
+  <script src="./register.js"></script>
+</html>

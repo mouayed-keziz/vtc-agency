@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Vtc Agency</title>
+    <link
+      rel="stylesheet"
+      href="/dist/output.css"
+    />
+  </head>
+  <body class="bg-main-white overflow-x-hidden">
+    <!-- this is the header for the small screens -->
+    <header class="py-10 block lg:hidden">
+      <div class="container relative mt-12 rounded-2xl h-20 6 px-8 flex items-center bg-white">
+        <div class="items h-full w-full flex justify-between">
+          <!-- this section is for the logo and the links -->
+          <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
+            <a
+              class="block min-h-fit min-w-fit"
+              href="./home.html"
+            >
+              <img
+                src="/assets//logo.svg"
+                alt=""
+              />
+            </a>
+            <!-- those are the links -->
+            <div class="side-bar content p-5 duration-700 z-40 bg-white rounded-2xl py-5 min-w-full -top-[500px] left-[50%] translate-x-[-50%] absolute flex flex-col gap-4 items-center">
+              <!--this is the user profile  -->
+              <div class="user-profile p-2 md:p-3 rounded-xl border-solid border-2 border-sec-gray w-full flex items-center justify-between">
+                <!-- this is the info container -->
+                <div class="info-container max-w-[80%] flex items-center justify-between gap-2 md:gap-5">
+                  <img
+                    src="/assets/profile_placeholder.png"
+                    class="w-12 h-12 object-cover rounded-full"
+                    alt=""
+                  />
+                  <div class="user-info flex flex-col gap-1">
+                    <span class="text-xs truncate block text-[#738496]">Signed as</span>
+                    <span class="email truncate block text-[#455B73] font-semibold text-sm">Djamelbnf38@gmail.com</span>
+                  </div>
+                </div>
+                <!-- this is the arrow button -->
+                <button type="button">
+                  <img
+                    class="w-7 h-7 object-cover"
+                    src="/assets/profile_arrow.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <!-- those are the links -->
+              <ul class="links w-full flex flex-col gap-5 my-5">
+                <li>
+                  <a
+                    class="w-full duration-300 hovered_blue px-5 py-2 rounded-xl h-full bg- flex items-center gap-5 font-normal text-[#ADBDCC] hover:text-main-blue"
+                    href="../accueil/acceuil.html   "
+                  >
+                    <img
+                      src="/assets/home_icon_gray.svg"
+                      alt=""
+                    />
+                    <span class="block">Acceuil</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="w-full duration-300 blue_back px-5 py-2 rounded-xl h-full bg- flex items-center gap-5 font-semibold text-main-blue"
+                    href="../historique/historique.html"
+                  >
+                    <img
+                      src="/assets/historique_icon_blue.svg"
+                      alt=""
+                    />
+                    <span class="block">Historique</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="w-full duration-300 hovered_blue px-5 py-2 rounded-xl h-full bg- flex items-center gap-5 font-medium text-[#ADBDCC] hover:text-main-blue"
+                    href="../settings/settings.html"
+                  >
+                    <img
+                      src="/assets/settings_icon_gray.svg"
+                      alt=""
+                    />
+                    <span class="block">Settings</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- this is the logout Button -->
+              <button
+                type="button"
+                class="w-full mt-20 duration-300 hovered_blue px-5 py-2 rounded-xl h-full bg- flex items-center gap-5 font-semibold text-[#ADBDCC] hover:text-main-blue"
+              >
+                <img
+                  src="/assets/logout.svg"
+                  alt=""
+                />
+                <span class="block">Log Out</span>
+              </button>
+            </div>
+          </div>
+          <!-- this section is for the buttons -->
+          <button class="sideBar-btn block lg:hidden">
+            <img
+              src="/assets//side-bar-btn.png"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- this is the main section -->
+    <main class="py-10 h-fit">
+      <div class="container flex gap-10">
+        <!-- those are the links -->
+        <aside class="side-bar hidden max-h-[600px] min-h-[500px] lg:flex content min-w-[300px] max-w-[380px] p-5 py-10 duration-700 bg-white rounded-2xl relative flex-col justify-between gap-4 items-center">
+          <!-- this is the top section -->
+          <div class="top-section w-full flex flex-col gap-10 ">
+            <!--this is the user profile  -->
+            <div class="logo w-full px-5 py-2 flex justify-start">
+              <a
+                class="flex items-center gap-3 min-h-fit min-w-fit"
+                href="/src/home/home.html"
+              >
+                <img
+                  src="/assets//logo.svg"
+                  alt=""
+                />
+                <span class="text-desc-gray font-semibold text-sm">CAB VTC</span>
+              </a>
+            </div>
+            <!-- those are the links -->
+            <ul class="links w-full flex flex-col gap-5 my-5">
+              <li>
+                <a
+                  class="w-full duration-300 hovered_blue px-5 py-2 rounded-xl h-full bg- flex items-center gap-5 font-normal text-[#ADBDCC] hover:text-main-blue"
+                  href="../accueil/acceuil.html"
+                >
+                  <img
+                    src="/assets/home_icon_gray.svg"
+                    alt=""
+                  />
+                  <span class="block">Acceuil</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="w-full duration-300 blue_back px-5 py-2 rounded-xl h-full bg- flex items-center gap-5 font-semibold text-main-blue"
+                  href="./historique.html"
+                >
+                  <img
+                    src="/assets/historique_icon_blue.svg"
+                    alt=""
+                  />
+                  <span class="block">Historique</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="w-full duration-300 hovered_blue px-5 py-2 rounded-xl h-full bg- flex items-center gap-5 font-medium text-[#ADBDCC] hover:text-main-blue"
+                  href="../settings/settings.html"
+                >
+                  <img
+                    src="/assets/settings_icon_gray.svg"
+                    alt=""
+                  />
+                  <span class="block">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- this is the logout Button -->
+          <button
+            type="button"
+            class="w-full h-fit duration-300 hovered_blue px-5 py-2 rounded-xl bg- flex items-center gap-5 font-semibold text-[#ADBDCC] hover:text-main-blue"
+          >
+            <img
+              src="/assets/logout.svg"
+              alt=""
+            />
+            <span class="block">Log Out</span>
+          </button>
+        </aside>
+        <!-- this is the right section -->
+        <section class="right_section overflow-scroll flex flex-col gap-14 flex-1 py-5">
+          <!-- this is the header of the section -->
+          <div class="header w-full max-w-full flex justify-between items-center">
+            <!-- this is the welcome phrase -->
+            <div class="welcome flex w-fit">
+              <h2 class="text-2xl md:text-3xl capitalize font-semibold text-[#455B73]">
+                Historique <br />
+                D’achats
+              </h2>
+            </div>
+            <!--this is the user profile  -->
+            <div class="user-profile hidden lg:flex p-2 md:p-3 rounded-xl bg-white w-fit items-center justify-between">
+              <!-- this is the info container -->
+              <div class="info-container max-w-[80%] flex items-center justify-between gap-2 md:gap-5">
+                <img
+                  src="/assets/profile_placeholder.png"
+                  class="w-12 h-12 object-cover rounded-full"
+                  alt=""
+                />
+                <div class="user-info flex flex-col gap-1">
+                  <span class="text-xs truncate block text-[#738496]">Signed as</span>
+                  <span class="email truncate block text-[#455B73] font-semibold text-sm">Djamelbnf38@gmail.com</span>
+                </div>
+              </div>
+              <!-- this is the arrow button -->
+              <button type="button">
+                <img
+                  class="w-7 h-7 object-cover"
+                  src="/assets/profile_arrow.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <!-- this is the filter section -->
+          <div class="filter-container w-full flex md:gap-20 justify-between flex-col gap-5 md:flex-row md:items-center">
+            <!-- this is the search bar container -->
+            <div class="search-bar-container bg-white flex flex-1 items-center rounded-2xl">
+              <div class="input-container rounded-l-2xl border-2 border-solid border-sec-gray flex-1 p-3">
+                <input
+                  type="text"
+                  class="w-full text-title-blue outline-none bg-transparent"
+                  placeholder="Search"
+                />
+              </div>
+              <button class="rounded-r-2xl px-5 p-3 bg-main-blue min-h-full">
+                <img
+                  src="/assets/white_search_icon.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+            <!-- this is the sorting container -->
+            <div class="sorting-container flex items-center gap-5">
+              <label
+                class="font-medium text-sm text-[#6C757D]"
+                for="sort"
+                >Sort By :
+              </label>
+              <select
+                name=""
+                id="sort"
+                class="p-3 text-sm text-[#6C757D] md:text-base px-6 rounded-xl bg-white border-solid border-2 border-sec-gray"
+              >
+                <option
+                  class=" "
+                  value=""
+                >
+                  Date
+                </option>
+                <option
+                  class=" "
+                  value=""
+                >
+                  Price
+                </option>
+              </select>
+            </div>
+          </div>
+          <!-- historic travels section -->
+          <div class="travels-container max-w-full overflow-scroll flex flex-col gap-5 font-semibold">
+            <div class="array_container flex flex-col gap-3 max-w-full min-w-[900px] overflow-scroll">
+              <!-- this is the array header -->
+              <div class="array-header flex items-center bg-[#EDF1F5] rounded-xl p-5">
+                <!-- this is the selectAll button (you should not remove the label) -->
+                <span class="text-sm font-semibold text-[#39424A] w-1/12">
+                  <input
+                    class="all_travels_checkbox"
+                    type="checkbox"
+                    name="selectAll"
+                    id="selectAll"
+                  />
+                  <label
+                    for="selectAll"
+                    class="text-title-blue font-normal text-sm"
+                  >
+                  </label>
+                </span>
+                <span class="text-sm font-semibold text-[#39424A] w-3/12">Départ</span>
+                <span class="text-sm font-semibold text-[#39424A] w-3/12">Arriveé</span>
+                <span class="text-sm font-semibold text-[#39424A] w-1/12">Vehicule</span>
+                <span class="text-sm font-semibold text-[#39424A] w-1/12">Prix</span>
+                <span class="text-sm font-semibold text-[#39424A] w-2/12">Date</span>
+                <span class="w-1/12 delete_button_container flex justify-center invisible duration-300">
+                  <button class="bg-red-500 rounded-md w-fit p-2">
+                    <img
+                      src="/assets/delete_icon.svg"
+                      alt=""
+                    />
+                  </button>
+                </span>
+              </div>
+              <!-- this is an  array row -->
+              <div class="array-row flex items-center bg-white rounded-xl p-5">
+                <!-- this is the ckeckBox (you should give unique id (for input) and for (for label for every input) ) -->
+                <span class="text-sm font-semibold text-[#39424A] w-1/12">
+                  <input
+                    class="single_travel_checkbox"
+                    type="checkbox"
+                    name="selectItem"
+                    id="selectItem"
+                  />
+                  <label
+                    for="selectItem"
+                    class="text-title-blue font-normal text-sm"
+                  >
+                  </label>
+                </span>
+                <span class="text-sm font-normal text-desc-gray w-3/12">CDG terminal 1 ICARE LOUN...</span>
+                <span class="text-sm font-normal text-desc-gray w-3/12">CDG terminal 1 ICARE LOUN...</span>
+                <span class="text-sm font-normal text-desc-gray w-1/12">Premium</span>
+                <span class="text-sm font-normal text-desc-gray w-1/12">1999.00</span>
+                <span class="text-sm font-normal text-desc-gray w-2/12">2023-04-05 21:30</span>
+                <!--this is the three points button  -->
+                <button class="text-base tracking-[2px] text-title-blue w-1/12 font-extrabold">...</button>
+              </div>
+              <div class="array-row flex items-center bg-white rounded-xl p-5">
+                <span class="text-sm font-semibold text-[#39424A] w-1/12">
+                  <input
+                    class="single_travel_checkbox"
+                    type="checkbox"
+                    name="selectSecondItem"
+                    id="selectSecondItem"
+                  />
+                  <label
+                    for="selectSecondItem"
+                    class="text-title-blue font-normal text-sm"
+                  >
+                  </label>
+                </span>
+                <span class="text-sm font-normal text-desc-gray w-3/12">CDG terminal 1 ICARE LOUN...</span>
+                <span class="text-sm font-normal text-desc-gray w-3/12">CDG terminal 1 ICARE LOUN...</span>
+                <span class="text-sm font-normal text-desc-gray w-1/12">Premium</span>
+                <span class="text-sm font-normal text-desc-gray w-1/12">1999.00</span>
+                <span class="text-sm font-normal text-desc-gray w-2/12">2023-04-05 21:30</span>
+                <!--this is the three points button  -->
+                <button class="text-base tracking-[2px] text-title-blue w-1/12 font-extrabold">...</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="./historique.js"></script>
+</html>

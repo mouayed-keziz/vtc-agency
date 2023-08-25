@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+.container {
+  width: 88%;
+  margin: 0 auto;
+}
+/* this is the light blue for some backgrounds */
+.blue_back {
+  background: rgba(38, 148, 183, 0.07);
+}
+.hovered_blue:hover {
+  background: rgba(38, 148, 183, 0.07);
+}
+/* this is the main button hover effect */
+.main_button:hover {
+  background-color: #51a9c5;
+}
+/* this style is for the header */
+.selected {
+  border-bottom: solid 2px #2694b7;
+  font-weight: 600;
+  color: #2694b7;
+}
+/* ######################################################### */
+/* start home page */
+/* this animation is for the about image */
+.about_img {
+  animation: about 5s linear 0s infinite forwards;
+}
+@keyframes about {
+  from {
+    right: -20%;
+  }
+  to {
+    right: 0;
+  }
+}
+/* this style is for the new testimonial swiper */
+.testimonial-swiper {
+  padding: 50px 0px !important ;
+  display: flex !important ;
+  flex-direction: column !important ;
+  gap: 100px !important;
+}
+.testimonial-swiper-wrapper {
+  min-width: 100% !important ;
+}
+.testimonial-swiper-slide {
+  min-width: 100% !important;
+  display: flex !important ;
+  flex-direction: row !important ;
+  justify-content: space-between !important;
+}
+
+.testimonial-swiper-pagintaion span {
+  height: 5px !important ;
+  width: 50px !important  ;
+  border-radius: 10px !important;
+  transition: 0.6s !important;
+}
+.testimonial-swiper-pagintaion span[aria-current="true"] {
+  background-color: #2694b7 !important;
+}
+/* show and hide big and small swiper */
+.testimonial-big-swiper {
+  display: block !important ;
+}
+
+@media (max-width: 768px) {
+  .testimonial-big-swiper {
+    display: none !important ;
+  }
+}
+.testimonial-small-swiper {
+  display: none !important ;
+}
+
+@media (max-width: 768px) {
+  .testimonial-small-swiper {
+    display: block !important ;
+  }
+}
+/* this is for the cars carousel */
+[attr="left_car"],
+[attr="right_car"] {
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 768px) {
+  [attr="left_car"],
+  [attr="right_car"] {
+    width: 100px;
+    height: 100px;
+  }
+}
+[attr="right_car"] {
+  animation: to_right 1s 0s forwards ease;
+}
+[attr="left_car"] {
+  animation: to_left 1s 0s forwards ease;
+}
+
+[attr="center_car"] {
+  animation: to_center 1s 0s forwards ease;
+  width: 500px;
+  height: 350px;
+}
+@media (max-width: 768px) {
+  [attr="center_car"] {
+    width: 300px;
+    height: 150px;
+    top: 50px;
+  }
+}
+@keyframes to_center {
+  0% {
+    left: 90%;
+    opacity: 0;
+  }
+  100% {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+@keyframes to_left {
+  0% {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  100% {
+    left: -50px;
+    transform: translateX(0);
+  }
+}
+@keyframes to_right {
+  0% {
+    left: -50px;
+  }
+  50% {
+    left: -250px;
+  }
+  75% {
+    right: -250px;
+  }
+  100% {
+    right: -50px;
+  }
+}
+/* to change the color of the direction svg */
+.direction_svg:hover path {
+  fill: #2694b7;
+}
+/* those animations are for the offers */
+.first_single_offer:hover .icon {
+  transform: rotate(45deg);
+}
+.second_single_offer:hover .icon {
+  transform: rotate(180deg);
+}
+.third_single_offer:hover .icon,
+.fourth_single_offer:hover .icon {
+  transform: scale(1.2);
+}
+/* this style is for all checkboxes */
+input[type="checkbox"] + label {
+  display: block;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label:before {
+  content: "\2714";
+  border: solid 1px #dee2e6;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 200;
+  margin-right: 10px;
+  vertical-align: bottom;
+  transition: 0.3s;
+  color: transparent;
+}
+input[type="checkbox"]:checked + label::before {
+  background-color: #2694b7;
+  color: white !important;
+  border-color: transparent;
+}
+/* this style is for all radio buttons */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: solid 6px #2694b7;
+  padding: 3px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* end home page */
+
+/* ######################################################## */
+/* start services page */
+/* this animation is for the service button */
+.service_button:hover .arrow_container {
+  background-color: #163250;
+}
+.service_button:hover span {
+  color: #163250;
+}
+.service_button:hover img {
+  transition: 0.3s;
+  transform: rotate(-45deg);
+}
+/* this style is for the services swiper */
+.services-swiper-slide {
+  display: flex !important;
+  flex-direction: column !important;
+}
+/* this is for the services/otherServices arrow animation */
+
+.single_service .service_arrow {
+  opacity: 0;
+}
+.single_service:hover .service_arrow {
+  opacity: 1;
+}
+/* end service page */
+
+/* ############################################### */
+/* start of blog page */
+.popular_overlay {
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 15px;
+  background: rgba(3, 3, 3, 0.7);
+}
+.arrow_button {
+  margin-bottom: -50px;
+}
+.single_popular:hover .popular_overlay {
+  opacity: 1;
+}
+.single_popular:hover .arrow_button {
+  margin-bottom: 0;
+}
+
+/* end services */
+/* ############################### */
+/* start user pages (acceuil) */
+.single_general_info:hover img {
+  border-color: #2694b7;
+}
+
+/* this style is for disabled input */
+input:disabled {
+  background-color: #f4f4f4;
+}
