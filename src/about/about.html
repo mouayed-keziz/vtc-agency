@@ -1,392 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="../../dist/output.css"
-    />
-    <title>about</title>
-  </head>
-  <body class="bg-main-white overflow-x-hidden">
-    <!-- this is the header -->
-    <header class="py-10">
-      <div class="container relative mt-12 rounded-2xl h-20 6 md:px-8 flex items-center md:bg-white">
-        <div class="items h-full w-full flex justify-between">
-          <!-- this section is for the logo and the links -->
-          <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
-            <a
-              class="block min-h-fit min-w-fit"
-              href="../home/home.html"
-            >
-              <img
-                src="../../assets//logo.svg"
-                alt=""
-              />
-            </a>
-            <!-- those are the links -->
-            <ul class="side-bar duration-700 w-screen z-40 bg-white rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../home/home.html">Accueil</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../services/services.html">Services</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 selected flex justify-center items-center min-h-full">
-                <a href="../about/about.html">À propos</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../blog/blog.html">Blog</a>
-              </li>
-              <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
-                <a href="../contact/contact.html">Contact</a>
-              </li>
-              <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
-                <a
-                  href="../login/login.html"
-                  class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue"
-                  >connection</a
-                >
-              </li>
-              <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
-                <a
-                  href="../contact/contact.html"
-                  class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue"
-                  >Contacter</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- this section is for the buttons -->
-          <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
-            <a
-              href="../login/login.html"
-              class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue"
-              >connection</a
-            >
-            <a
-              href="../contact/contact.html"
-              class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue"
-              >Contacter</a
-            >
-          </div>
-          <!-- this is- the side  bar container -->
-          <button class="sideBar-btn block lg:hidden">
-            <img
-              src="../../assets//side-bar-btn.png"
-              alt=""
-            />
-          </button>
-        </div>
-      </div>
-    </header>
-    <!-- this is the hero section -->
-    <section class="py-10 md:py-14">
-      <div class="container flex justify-between">
-        <div class="text-container flex flex-col gap-5 w-full lg:w-1/2">
-          <h1 class="text-title-blue font-semibold text-3xl md:text-4xl">About CABVTC</h1>
-          <p class="text-desc-gray text-base font-normal w-full lg:w-2/3">-AgencyCab Vtc, une agence spécialisée dans la location de véhicules haut de gamme avec chauffeur privé pour vos déplacements professionnels ainsi que pour ceux de vos collaborateurs et clients, ainsi que pour l'accompagnement. Nous mettons à votre disposition une gamme de véhicules haut de gamme pour répondre à tous vos besoins de transport professionnel. Nos chauffeurs professionnels et expérimentés vous garantissent un service de qualité supérieure et un trajet confortable et sûr. Chez AgencyCab Vtc, nous sommes engagés à vous offrir un service personnalisé et à répondre à toutes vos exigences en matière de transport professionnel</p>
-        </div>
-        <!-- this is the image -->
-        <img
-          src="../../assets/about_hero.png"
-          alt=""
-          class="hidden lg:block max-h-[450px] max-w-full object-fill"
-        />
-      </div>
-    </section>
-    <!-- this is the vision section -->
-    <section class="vision py-10 md:py-14">
-      <div class="container flex flex-col md:flex-row justify-between items-center gap-10">
-        <img
-          src="../../assets/about_vision.png"
-          alt=""
-          class="w-full md:max-w-[50%]"
-        />
-        <div class="text-container w-full md:max-w-[50%] flex flex-col gap-5">
-          <h4 class="text-title-blue text-2xl md:text-3xl font-semibold">Notre Vision Pour Le Future</h4>
-          <p class="text-desc-gray font-normal text-base">AgencyCab Vtc, une agence spécialisée dans la location de véhicules haut de gamme avec chauffeur privé pour vos déplacements professionnels ainsi que pour ceux de vos collaborateurs et clients, ainsi que pour l'accompagnement.s vos exigences en matière de transport professionnel</p>
-        </div>
-      </div>
-    </section>
-    <!-- this is the trusted us section section -->
-    <section class="partners py-10 md:py-14">
-      <div class="container flex items-center justify-evenly flex-wrap gap-5">
-        <img
-          src="/assets/trusted1.png"
-          alt=""
-          class="max-w-16 md:max-w-24 max-h-16 md:max-h-24 object-fill"
-        />
-        <img
-          src="/assets/trusted2.png"
-          alt=""
-          class="max-w-10 md:max-w-14 max-h-10 md:max-h-14 object-fill"
-        />
-        <img
-          src="/assets/trusted3.png"
-          alt=""
-          class="max-w-10 md:max-w-14 max-h-10 md:max-h-14 object-fill"
-        />
-        <img
-          src="/assets/trusted4.png"
-          alt=""
-          class="max-w-10 md:max-w-14 max-h-10 md:max-h-14 object-fill"
-        />
-        <img
-          src="/assets/trusted5.png"
-          alt=""
-          class="max-w-10 md:max-w-14 max-h-10 md:max-h-14 object-fill"
-        />
-        <img
-          src="/assets/trusted6.png"
-          alt=""
-          class="max-w-10 md:max-w-14 max-h-10 md:max-h-14 object-fill"
-        />
-      </div>
-    </section>
-    <!-- contact section -->
-    <section class="contact pt-12">
-      <div class="container">
-        <h1 class="text-center text-2xl font-bold text-title-blue">Nous Contacter</h1>
-        <div class="content w-full">
-          <div class="form-container py-5 relative mt-14 w-full lg:w-[55%] xl:w-[45%] mx-auto">
-            <!-- this is the form -->
-            <form
-              action=""
-              class="rounded-2xl flex flex-col gap-5 z-30 p-5 bg-white relative"
-            >
-              <div class="form-column m flex flex-col gap-3 w-full">
-                <label
-                  for="Nom"
-                  class="text-paragraph-blue font-semibold"
-                  >Nom Complet</label
-                >
-                <input
-                  id="nom"
-                  type="text"
-                  class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
-                  placeholder="Nom"
-                />
-              </div>
-              <div class="form-column flex flex-col gap-3 w-full">
-                <label
-                  for="email"
-                  class="text-paragraph-blue font-semibold"
-                  >Email</label
-                >
-                <input
-                  id="email"
-                  type="email"
-                  class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
-                  placeholder="example@gmail.com"
-                />
-              </div>
-              <div class="form-column flex flex-col gap-3 w-full">
-                <label
-                  for="entreprise"
-                  class="text-paragraph-blue font-semibold"
-                  >Societe/Entreprise</label
-                >
-                <input id="entreprise type="email" class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid" placeholder="VTC / CAB " />
-              </div>
-              <div class="form-column flex flex-col gap-3 w-full">
-                <label
-                  for="entreprise"
-                  class="text-paragraph-blue font-semibold"
-                  >Message</label
-                >
-                <textarea
-                  class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid resize-none"
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="5"
-                ></textarea>
-              </div>
-              <!-- this is the bottom section of the form -->
-              <div class="form-column mt-5 flex justify-end md:justify-between items-center">
-                <div class="checkbox-cotainer hidden md:block">
-                  <input
-                    class=""
-                    type="checkbox"
-                    name="accepted"
-                    id="terms"
-                  />
-                  <label
-                    for="terms"
-                    class="text-title-blue font-normal text-sm"
-                  >
-                    j’accepte les
-                    <a
-                      href="/terms"
-                      class="underline"
-                      >Politiques de Confidentialité</a
-                    >
-                    de CAB VTC
-                  </label>
-                </div>
-                <!-- this is the submittion button -->
-                <button class="rounded-xl main_button duration-300 flex items-center gap-2 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">
-                  <span>Envoyer</span>
-                  <img
-                    src="../../assets/send_icon.svg"
-                    alt=""
-                  />
-                </button>
-              </div>
-            </form>
-            <!-- those are the contact assets -->
-            <img
-              class="absolute hidden lg:block -left-64 xl:-left-72 top-[20%]"
-              src="../../assets/phone.png"
-              alt=""
-            />
-            <img
-              class="absolute -left-9 -bottom-20 lg:-left-52 lg:bottom-24"
-              src="../../assets/earth.png"
-              alt=""
-            />
-            <img
-              class="absolute hidden lg:block -right-60 xl:-right-80 bottom-8"
-              src="../../assets/letter_container.png"
-              alt=""
-            />
-            <img
-              class="absolute -top-10 -right-16 md:-right-24 z-0"
-              src="../../assets/duration_icon.png"
-              alt=""
-            />
-            <!-- this is the points image -->
-            <img
-              class="absolute -top-10 z-[-1] -left-24 hidden lg:block"
-              src="../../assets/points.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- this is the footer -->
-    <footer class="py-10">
-      <div class="container px-5 py-10 bg-white rounded-2xl flex justify-between gap-10 flex-col md:flex-row">
-        <div class="first-column w-full md:w-[33%] flex flex-col gap-3">
-          <a
-            class="block min-h-fit min-w-fit"
-            href="./home.html"
-          >
-            <img
-              src="../../assets//logo.svg"
-              alt=""
-            />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../dist/output.css" />
+  <title>about</title>
+</head>
+
+<body class="bg-main-white overflow-x-hidden">
+  <!-- this is the header -->
+  <header class="py-10">
+    <div class="container relative mt-12 rounded-2xl h-20 6 md:px-8 flex items-center md:bg-white">
+      <div class="items h-full w-full flex justify-between">
+        <!-- this section is for the logo and the links -->
+        <div class="left-side flex gap-4 lg:gap-14 items-center h-full">
+          <a class="block min-h-fit min-w-fit" href="../home/home.html">
+            <img src="../../assets//logo.svg" alt="" />
           </a>
-          <p class="text-desc-gray inter font-light text-base w-full md:w-2/3">une agence spécialisée dans la location de véhicules haut de gamme.</p>
-        </div>
-        <div class="second-column w-full md:w-[33%] flex flex-col gap-3">
-          <h4 class="text-[#4F5A65] font-semibold">Content</h4>
-          <ul class="flex flex-col gap-2">
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/home/home.html"
-                >Home</a
-              >
+          <!-- those are the links -->
+          <ul
+            class="side-bar duration-700 w-screen z-40 bg-white rounded-2xl py-5 lg:py-0 lg:bg-inherit lg:h-full min-w-full lg:w-fit -top-96 left-[50%] translate-x-[-50%] lg:top-0 absolute lg:relative flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../home/home.html">Accueil</a>
             </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/about/about.html"
-                >À Propos</a
-              >
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../services/services.html">Services</a>
             </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/blog/blog.html"
-                >Blog</a
-              >
+            <li
+              class="text-main-gray hover:text-main-blue duration-300 selected flex justify-center items-center min-h-full">
+              <a href="../about/about.html">À propos</a>
             </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/services/services.html"
-                >Reserver</a
-              >
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../blog/blog.html">Blog</a>
             </li>
-            <li>
-              <a
-                class="text-[#ADBDCC] hover:text-main-blue duration-300"
-                href="/src/contact/contact.html"
-                >Contact</a
-              >
+            <li class="text-main-gray hover:text-main-blue duration-300 flex justify-center items-center min-h-full">
+              <a href="../contact/contact.html">Contact</a>
+            </li>
+            <li class="btns-container flex md:hidden items-center gap-2 lg:gap-5">
+              <a href="../login/login.html"
+                class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-main-blue">connection</a>
+            </li>
+            <li class="btns-container flex md:hidden items-center gap-[5px] lg:gap-5">
+              <a href="../contact/contact.html"
+                class="rounded-2xl h-fit border-2 border-solid border-main-blue px-3 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</a>
             </li>
           </ul>
         </div>
-        <div class="third-column w-full md:w-[33%] flex flex-col gap-3">
-          <h4 class="text-[#4F5A65] font-semibold">Social</h4>
-          <ul class="flex gap-5">
-            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
-              <a
-                class="min-h-10 min-w-10 block"
-                href=""
-                ><img
-                  src="../../assets/facebook.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
-              <a
-                class="min-h-10 min-w-10 block"
-                href=""
-                ><img
-                  src="../../assets/instagram.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
-              <a
-                class="min-h-10 min-w-10 block"
-                href=""
-                ><img
-                  src="../../assets/twiiter.svg"
-                  alt=""
-              /></a>
-            </li>
-          </ul>
-          <ul class="flex flex-col gap-3 mt-3">
-            <li class="flex">
-              <a
-                class="flex gap-2 items-center"
-                href="mailto:hello@agencycabvtc.com"
-              >
-                <img
-                  src="../../assets/small_message.svg"
-                  alt=""
-                />
-                <span class="text-[#ADBDCC] text-sm">hello@agencycabvtc.com</span>
-              </a>
-            </li>
-            <li class="flex">
-              <a
-                class="flex gap-2 items-center"
-                href="tel:+33 1 81 70 80 65"
-              >
-                <img
-                  src="../../assets/small_phone.svg"
-                  alt=""
-                />
-                <span class="text-[#ADBDCC] text-sm">+33 1 81 70 80 65</span>
-              </a>
-            </li>
-          </ul>
+        <!-- this section is for the buttons -->
+        <div class="btns-container hidden lg:flex items-center gap-2 lg:gap-5">
+          <a href="../login/login.html"
+            class="rounded-2xl hovered_blue duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-main-blue">connection</a>
+          <a href="../contact/contact.html"
+            class="rounded-2xl main_button duration-300 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">Contacter</a>
+        </div>
+        <!-- this is- the side  bar container -->
+        <button class="sideBar-btn block lg:hidden">
+          <img src="../../assets//side-bar-btn.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- this is the hero section -->
+  <section class="py-10 md:py-14">
+    <div class="container flex justify-between">
+      <div class="text-container flex flex-col gap-5 w-full lg:w-1/2">
+        <h1 class="text-title-blue font-semibold text-3xl md:text-4xl">About CABVTC</h1>
+        <p class="text-desc-gray text-base font-normal w-full lg:w-2/3">-AgencyCab Vtc, une agence spécialisée dans la
+          location de véhicules haut de gamme avec chauffeur privé pour vos déplacements professionnels ainsi que pour
+          ceux de vos collaborateurs et clients, ainsi que pour l'accompagnement. Nous mettons à votre disposition une
+          gamme de véhicules haut de gamme pour répondre à tous vos besoins de transport professionnel. Nos chauffeurs
+          professionnels et expérimentés vous garantissent un service de qualité supérieure et un trajet confortable et
+          sûr. Chez AgencyCab Vtc, nous sommes engagés à vous offrir un service personnalisé et à répondre à toutes vos
+          exigences en matière de transport professionnel</p>
+      </div>
+      <!-- this is the image -->
+      <img src="../../assets/about_hero.png" alt="" class="hidden lg:block max-h-[450px] max-w-full object-fill" />
+    </div>
+  </section>
+  <!-- this is the vision section -->
+  <section class="vision py-10 md:py-14">
+    <div class="container flex flex-col md:flex-row justify-between items-center gap-10">
+      <img src="../../assets/about_vision.png" alt="" class="w-full md:max-w-[50%]" />
+      <div class="text-container w-full md:max-w-[50%] flex flex-col gap-5">
+        <h4 class="text-title-blue text-2xl md:text-3xl font-semibold">Notre Vision Pour Le Future</h4>
+        <p class="text-desc-gray font-normal text-base">AgencyCab Vtc, une agence spécialisée dans la location de
+          véhicules haut de gamme avec chauffeur privé pour vos déplacements professionnels ainsi que pour ceux de vos
+          collaborateurs et clients, ainsi que pour l'accompagnement.s vos exigences en matière de transport
+          professionnel</p>
+      </div>
+    </div>
+  </section>
+  <!-- this is the trusted us section section -->
+  <section class="partners py-10 md:py-14">
+    <div class="container flex items-center justify-evenly flex-wrap gap-5">
+      <img src="../../assets/trusted1.png" alt="" class="max-w-16 md:max-w-24 max-h-16 md:max-h-24 object-fill" />
+      <img src="../../assets/trusted2.png" alt="" class="max-w-10 md:max-w-14 max-h-10 md:max-h-14 object-fill" />
+      <img src="../../assets/trusted3.png" alt="" class="max-w-10 md:max-w-14 max-h-10 md:max-h-14 object-fill" />
+      <img src="../../assets/trusted4.png" alt="" class="max-w-10 md:max-w-14 max-h-10 md:max-h-14 object-fill" />
+      <img src="../../assets/trusted5.png" alt="" class="max-w-10 md:max-w-14 max-h-10 md:max-h-14 object-fill" />
+      <img src="../../assets/trusted6.png" alt="" class="max-w-10 md:max-w-14 max-h-10 md:max-h-14 object-fill" />
+    </div>
+  </section>
+  <!-- contact section -->
+  <section class="contact pt-12">
+    <div class="container">
+      <h1 class="text-center text-2xl font-bold text-title-blue">Nous Contacter</h1>
+      <div class="content w-full">
+        <div class="form-container py-5 relative mt-14 w-full lg:w-[55%] xl:w-[45%] mx-auto">
+          <!-- this is the form -->
+          <form action="" class="rounded-2xl flex flex-col gap-5 z-30 p-5 bg-white relative">
+            <div class="form-column m flex flex-col gap-3 w-full">
+              <label for="Nom" class="text-paragraph-blue font-semibold">Nom Complet</label>
+              <input id="nom" type="text"
+                class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+                placeholder="Nom" />
+            </div>
+            <div class="form-column flex flex-col gap-3 w-full">
+              <label for="email" class="text-paragraph-blue font-semibold">Email</label>
+              <input id="email" type="email"
+                class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+                placeholder="example@gmail.com" />
+            </div>
+            <div class="form-column flex flex-col gap-3 w-full">
+              <label for="entreprise" class="text-paragraph-blue font-semibold">Societe/Entreprise</label>
+              <input id="entreprise type=" email"
+                class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid"
+                placeholder="VTC / CAB " />
+            </div>
+            <div class="form-column flex flex-col gap-3 w-full">
+              <label for="entreprise" class="text-paragraph-blue font-semibold">Message</label>
+              <textarea
+                class="rounded-xl focus:border-main-blue outline-none text-paragraph-blue px-4 py-3 border-2 border-sec-gray border-solid resize-none"
+                name="" id="" cols="30" rows="5"></textarea>
+            </div>
+            <!-- this is the bottom section of the form -->
+            <div class="form-column mt-5 flex justify-end md:justify-between items-center">
+              <div class="checkbox-cotainer hidden md:block">
+                <input class="" type="checkbox" name="accepted" id="terms" />
+                <label for="terms" class="text-title-blue font-normal text-sm">
+                  j’accepte les
+                  <a href="/terms" class="underline">Politiques de Confidentialité</a>
+                  de CAB VTC
+                </label>
+              </div>
+              <!-- this is the submittion button -->
+              <button
+                class="rounded-xl main_button duration-300 flex items-center gap-2 h-fit border-2 border-solid border-main-blue px-3 lg:px-5 py-2 font-semibold text-white outline-none bg-main-blue">
+                <span>Envoyer</span>
+                <img src="../../assets/send_icon.svg" alt="" />
+              </button>
+            </div>
+          </form>
+          <!-- those are the contact assets -->
+          <img class="absolute hidden lg:block -left-64 xl:-left-72 top-[20%]" src="../../assets/phone.png" alt="" />
+          <img class="absolute -left-9 -bottom-20 lg:-left-52 lg:bottom-24" src="../../assets/earth.png" alt="" />
+          <img class="absolute hidden lg:block -right-60 xl:-right-80 bottom-8" src="../../assets/letter_container.png"
+            alt="" />
+          <img class="absolute -top-10 -right-16 md:-right-24 z-0" src="../../assets/duration_icon.png" alt="" />
+          <!-- this is the points image -->
+          <img class="absolute -top-10 z-[-1] -left-24 hidden lg:block" src="../../assets/points.png" alt="" />
         </div>
       </div>
-      <!-- this is the copyright phrase -->
-      <p class="text-center text-[#ADBDCC] text-sm md:text-base text-medium my-10">All Rights Reserved-CAB VTC <span class="year"></span></p>
-    </footer>
-  </body>
-  <script src="./about.js"></script>
+    </div>
+  </section>
+  <!-- this is the footer -->
+  <footer class="py-10">
+    <div class="container px-5 py-10 bg-white rounded-2xl flex justify-between gap-10 flex-col md:flex-row">
+      <div class="first-column w-full md:w-[33%] flex flex-col gap-3">
+        <a class="block min-h-fit min-w-fit" href="./home.html">
+          <img src="../../assets//logo.svg" alt="" />
+        </a>
+        <p class="text-desc-gray inter font-light text-base w-full md:w-2/3">une agence spécialisée dans la location de
+          véhicules haut de gamme.</p>
+      </div>
+      <div class="second-column w-full md:w-[33%] flex flex-col gap-3">
+        <h4 class="text-[#4F5A65] font-semibold">Content</h4>
+        <ul class="flex flex-col gap-2">
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/home/home.html">Home</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/about/about.html">À Propos</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/blog/blog.html">Blog</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/services/services.html">Reserver</a>
+          </li>
+          <li>
+            <a class="text-[#ADBDCC] hover:text-main-blue duration-300" href="/src/contact/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="third-column w-full md:w-[33%] flex flex-col gap-3">
+        <h4 class="text-[#4F5A65] font-semibold">Social</h4>
+        <ul class="flex gap-5">
+          <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+            <a class="min-h-10 min-w-10 block" href=""><img src="../../assets/facebook.svg" alt="" /></a>
+          </li>
+          <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+            <a class="min-h-10 min-w-10 block" href=""><img src="../../assets/instagram.svg" alt="" /></a>
+          </li>
+          <li class="duration-300 border-solid border-2 border-transparent hover:border-main-blue rounded-md">
+            <a class="min-h-10 min-w-10 block" href=""><img src="../../assets/twiiter.svg" alt="" /></a>
+          </li>
+        </ul>
+        <ul class="flex flex-col gap-3 mt-3">
+          <li class="flex">
+            <a class="flex gap-2 items-center" href="mailto:hello@agencycabvtc.com">
+              <img src="../../assets/small_message.svg" alt="" />
+              <span class="text-[#ADBDCC] text-sm">hello@agencycabvtc.com</span>
+            </a>
+          </li>
+          <li class="flex">
+            <a class="flex gap-2 items-center" href="tel:+33 1 81 70 80 65">
+              <img src="../../assets/small_phone.svg" alt="" />
+              <span class="text-[#ADBDCC] text-sm">+33 1 81 70 80 65</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- this is the copyright phrase -->
+    <p class="text-center text-[#ADBDCC] text-sm md:text-base text-medium my-10">All Rights Reserved-CAB VTC <span
+        class="year"></span></p>
+  </footer>
+</body>
+<script src="./about.js"></script>
+
 </html>
